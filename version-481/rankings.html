@@ -1,0 +1,1091 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>欧美电影排行榜 - 欧美电影榜</title>
+  <meta name="description" content="欧美电影排行榜精选高分好莱坞大片、经典欧美电影和热门高清电影，支持在线筛选与播放。">
+  <meta name="keywords" content="欧美电影,在线观看,免费电影,好莱坞大片,欧美电影排行榜,高清电影,多设备播放,离线缓存,永久免费,电影网站,电影排行榜,热门电影">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="./rankings.html">
+  <link rel="stylesheet" href="./assets/app.css">
+</head>
+<body>
+<header class="site-header sticky top-0 z-50 bg-white bg-opacity-80">
+  <div class="container mx-auto px-4 py-3 flex items-center justify-between gap-4">
+    <a class="site-logo text-2xl" href="./index.html" aria-label="欧美电影榜"><span class="site-logo-mark">影</span><span>欧美电影榜</span></a>
+    <nav class="desktop-nav flex items-center gap-2"><a class="site-nav-link " href="./index.html">首页</a><a class="site-nav-link " href="./categories.html">分类</a><a class="site-nav-link is-active" href="./rankings.html">排行榜</a><a class="site-nav-link " href="./search.html">搜索</a></nav>
+    <form class="desktop-search site-search" action="./search.html" method="get" data-search-form>
+      <input type="search" name="q" placeholder="搜索影片" aria-label="搜索影片">
+      <button type="submit">搜索</button>
+    </form>
+    <button class="mobile-menu p-2 rounded-lg bg-gray-100" type="button" data-mobile-menu aria-label="打开导航">☰</button>
+  </div>
+  <div class="mobile-panel" data-mobile-panel>
+    <div class="container mx-auto px-4 py-4 space-y-3">
+      <nav class="grid grid-cols-2 gap-2"><a class="site-nav-link block " href="./index.html">首页</a><a class="site-nav-link block " href="./categories.html">分类</a><a class="site-nav-link block is-active" href="./rankings.html">排行榜</a><a class="site-nav-link block " href="./search.html">搜索</a></nav>
+      <form class="site-search" action="./search.html" method="get" data-search-form>
+        <input type="search" name="q" placeholder="搜索影片" aria-label="搜索影片">
+        <button type="submit">搜索</button>
+      </form>
+    </div>
+  </div>
+</header>
+<main class="container mx-auto px-4 py-12" data-filter-root>
+  <div class="section-title">
+    <div>
+      <h1>欧美电影排行榜</h1>
+      <p>综合口碑、年份、标签热度和频道推荐呈现的热门影片榜单，点击即可进入播放详情页。</p>
+    </div>
+    <a class="primary-btn" href="./search.html">搜索影片</a>
+  </div>
+  <div class="filter-bar">
+  <input type="search" data-filter-search placeholder="搜索榜单影片" aria-label="影片筛选">
+  <select data-filter-region aria-label="地区筛选"><option value="">全部地区</option><option value="不丹">不丹</option><option value="中国">中国</option><option value="中国内地">中国内地</option><option value="中国台湾">中国台湾</option><option value="中国大陆">中国大陆</option><option value="中国香港">中国香港</option><option value="俄罗斯">俄罗斯</option><option value="加拿大">加拿大</option><option value="匈牙利 / 中国">匈牙利 / 中国</option><option value="印度">印度</option><option value="土耳其">土耳其</option><option value="德国">德国</option><option value="意大利">意大利</option><option value="意大利 / 英国">意大利 / 英国</option><option value="日本">日本</option><option value="日本 / 中国大陆">日本 / 中国大陆</option><option value="法国">法国</option><option value="法国 / 加拿大">法国 / 加拿大</option><option value="法国 / 德国">法国 / 德国</option><option value="法国 / 意大利">法国 / 意大利</option><option value="法国 / 日本">法国 / 日本</option><option value="法国 / 海地">法国 / 海地</option><option value="法国, 意大利">法国, 意大利</option><option value="泰国">泰国</option><option value="澳大利亚">澳大利亚</option><option value="美国">美国</option><option value="美国 / 英国">美国 / 英国</option><option value="英国">英国</option><option value="英国 / 美国">英国 / 美国</option><option value="西班牙">西班牙</option><option value="西班牙 / 墨西哥">西班牙 / 墨西哥</option><option value="阿尔及利亚/法国">阿尔及利亚/法国</option><option value="韩国">韩国</option><option value="香港">香港</option></select>
+  <select data-filter-type aria-label="类型筛选"><option value="">全部类型</option><option value="OVA">OVA</option><option value="剧集">剧集</option><option value="剧集 年代, 剧情">剧集 年代, 剧情</option><option value="动画剧集">动画剧集</option><option value="动画电影">动画电影</option><option value="电影">电影</option><option value="电影 / 动画">电影 / 动画</option><option value="电影/动画">电影/动画</option><option value="电影/特别篇">电影/特别篇</option><option value="电视剧">电视剧</option><option value="电视剧 / 续集">电视剧 / 续集</option><option value="综艺">综艺</option><option value="网剧">网剧</option></select>
+  <select data-filter-year aria-label="年份筛选"><option value="">全部年份</option><option value="2032">2032</option><option value="2030">2030</option><option value="2029">2029</option><option value="2028">2028</option><option value="2027">2027</option><option value="2026">2026</option><option value="2025">2025</option></select>
+</div>
+<div class="text-sm text-gray-500 mb-4" data-result-count></div>
+  <div class="space-y-4"><a href="./movie-1777.html" class="rank-row movie-card" data-title="杜桑·卢维杜尔" data-region="法国 / 海地" data-type="电影" data-year="2032" data-tags="海地革命,奴隶起义,拿破仑,黑人英雄,史诗,历史,传记,战争,法国 / 海地,电影" data-genre="历史, 传记, 战争">
+  <span class="rank-number">1</span>
+  <img src="./127.jpg" alt="杜桑·卢维杜尔" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">杜桑·卢维杜尔</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">法属殖民地的一名奴隶，如何依靠种植园战术板晋升将军，最终击败拿破仑的远征军并建立黑人国家。</em><small class="block text-xs text-gray-400 mt-2">法国 / 海地 · 电影 · 2032</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0100.html" class="rank-row movie-card" data-title="超人：世界末日" data-region="美国" data-type="电影" data-year="2030" data-tags="超人,毁灭日,牺牲,动作,科幻,灾难,美国,电影" data-genre="动作 / 科幻 / 灾难">
+  <span class="rank-number">2</span>
+  <img src="./100.jpg" alt="超人：世界末日" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">超人：世界末日</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">毁灭日降临大都会，超人拼死一战，但最可怕的是——公众发现他也会流血。</em><small class="block text-xs text-gray-400 mt-2">美国 · 电影 · 2030</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0450.html" class="rank-row movie-card" data-title="惊变28年" data-region="英国" data-type="电影" data-year="2030" data-tags="末世,病毒进化,人性考验,硬核科幻,科幻,恐怖,英国,电影" data-genre="科幻 / 恐怖">
+  <span class="rank-number">3</span>
+  <img src="./150.jpg" alt="惊变28年" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">惊变28年</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">狂暴病毒爆发28年后，幸存者在地堡生下了一代免疫病毒但嗜血的“新人类”。</em><small class="block text-xs text-gray-400 mt-2">英国 · 电影 · 2030</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0087.html" class="rank-row movie-card" data-title="特洛伊奥德赛" data-region="美国" data-type="剧集" data-year="2029" data-tags="史诗,架空历史,硬核动作,神话新编,复仇,动作,奇幻,历史,美国,剧集" data-genre="动作 / 奇幻 / 历史">
+  <span class="rank-number">4</span>
+  <img src="./87.jpg" alt="特洛伊奥德赛" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">特洛伊奥德赛</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">特洛伊战争结束三年后，奥德修斯没有回家，而是带着一群斯巴达战士杀入了奥林匹斯山。</em><small class="block text-xs text-gray-400 mt-2">美国 · 剧集 · 2029</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0716.html" class="rank-row movie-card" data-title="打击魔鬼" data-region="香港" data-type="电影" data-year="2029" data-tags="卧底,黑吃黑,三合会,动作,犯罪,警匪,香港,电影" data-genre="动作 / 犯罪 / 警匪">
+  <span class="rank-number">5</span>
+  <img src="./116.jpg" alt="打击魔鬼" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">打击魔鬼</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">卧底警察发现要抓捕的毒枭，竟是二十年前救过自己命的孤儿院哥哥。</em><small class="block text-xs text-gray-400 mt-2">香港 · 电影 · 2029</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-1125.html" class="rank-row movie-card" data-title="游戏规则" data-region="中国大陆" data-type="电影" data-year="2029" data-tags="高智商犯罪,密室对决,复仇,反转再反转,悬疑,犯罪,剧情,中国大陆,电影" data-genre="悬疑 / 犯罪 / 剧情">
+  <span class="rank-number">6</span>
+  <img src="./75.jpg" alt="游戏规则" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">游戏规则</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">一场没有主办方的“游戏”将六位各怀鬼胎的成功人士锁进密室，规则只有一条：最后幸存的人才能离开。</em><small class="block text-xs text-gray-400 mt-2">中国大陆 · 电影 · 2029</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-1557.html" class="rank-row movie-card" data-title="巫婆不坏" data-region="中国大陆" data-type="电影" data-year="2029" data-tags="童话解构,女巫,善良,反转,合家欢,动画,奇幻,喜剧,中国大陆,电影" data-genre="动画, 奇幻, 喜剧">
+  <span class="rank-number">7</span>
+  <img src="./57.jpg" alt="巫婆不坏" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">巫婆不坏</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">童话镇上最丑的巫婆，其实是唯一一个用魔法帮助穷人却背了所有黑锅的背锅侠。</em><small class="block text-xs text-gray-400 mt-2">中国大陆 · 电影 · 2029</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0627.html" class="rank-row movie-card" data-title="阴阳画皮" data-region="中国" data-type="电影" data-year="2028" data-tags="画皮,阴阳眼,书生,聊斋,奇幻,恐怖,爱情,中国,电影" data-genre="奇幻, 恐怖, 爱情">
+  <span class="rank-number">8</span>
+  <img src="./27.jpg" alt="阴阳画皮" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">阴阳画皮</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">拥有阴阳眼的穷书生买回一幅美人图，每晚画中女鬼都会爬出为他梳洗，但画皮在慢慢变薄。</em><small class="block text-xs text-gray-400 mt-2">中国 · 电影 · 2028</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-1138.html" class="rank-row movie-card" data-title="红楼梦第六部" data-region="中国大陆" data-type="电影" data-year="2028" data-tags="文学改编,家族衰败,宿命,剧情,古装,中国大陆,电影" data-genre="剧情, 古装">
+  <span class="rank-number">9</span>
+  <img src="./88.jpg" alt="红楼梦第六部" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">红楼梦第六部</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">大观园最后的幻梦破碎，黛玉焚稿、宝玉失玉、贾府抄家，所有宿命在这一部集中引爆。</em><small class="block text-xs text-gray-400 mt-2">中国大陆 · 电影 · 2028</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-1145.html" class="rank-row movie-card" data-title="女人河" data-region="中国大陆" data-type="电影" data-year="2028" data-tags="母女三代,长江,计划生育,剧情,女性,乡村,中国大陆,电影" data-genre="剧情 / 女性 / 乡村">
+  <span class="rank-number">10</span>
+  <img src="./95.jpg" alt="女人河" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">女人河</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">长江边的三代女人，分别经历了溺婴、独生和丁克，她们是河流也对抗河流。</em><small class="block text-xs text-gray-400 mt-2">中国大陆 · 电影 · 2028</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0044.html" class="rank-row movie-card" data-title="未来忍者 庆云机忍外传" data-region="日本" data-type="电影" data-year="2027" data-tags="赛博朋克,忍者,机甲,日本动画,反乌托邦,科幻,动作,动画,日本,电影" data-genre="科幻 / 动作 / 动画">
+  <span class="rank-number">11</span>
+  <img src="./44.jpg" alt="未来忍者 庆云机忍外传" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">未来忍者 庆云机忍外传</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">2127年，最后一个纯血肉忍者被改造成半机械兵器，他要用古老的忍术对抗操控世界的AI。</em><small class="block text-xs text-gray-400 mt-2">日本 · 电影 · 2027</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0080.html" class="rank-row movie-card" data-title="女影人生" data-region="中国内地" data-type="电影" data-year="2027" data-tags="女性导演,电影史,民国,独立女性,剧情,传记,中国内地,电影" data-genre="剧情 / 传记">
+  <span class="rank-number">12</span>
+  <img src="./80.jpg" alt="女影人生" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">女影人生</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">尘封档案被发现，记录了民国时期中国第一位女导演——她拍的电影比《渔光曲》更轰动，却被历史彻底遗忘。</em><small class="block text-xs text-gray-400 mt-2">中国内地 · 电影 · 2027</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0113.html" class="rank-row movie-card" data-title="腓特烈大帝之崔恩克传" data-region="德国" data-type="剧集" data-year="2027" data-tags="宫廷,骑兵,禁恋,历史,传记,战争,德国,剧集" data-genre="历史 / 传记 / 战争">
+  <span class="rank-number">13</span>
+  <img src="./113.jpg" alt="腓特烈大帝之崔恩克传" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">腓特烈大帝之崔恩克传</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">腓特烈大帝的侍卫长崔恩克，从战场英雄沦为阶下囚，全因爱上不该爱的人。</em><small class="block text-xs text-gray-400 mt-2">德国 · 剧集 · 2027</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0151.html" class="rank-row movie-card" data-title="阿尔及尔的末代王后" data-region="阿尔及利亚/法国" data-type="电影" data-year="2027" data-tags="奥斯曼,殖民,女权,北非,宫斗,历史,史诗,阿尔及利亚/法国,电影" data-genre="历史/史诗">
+  <span class="rank-number">14</span>
+  <img src="./1.jpg" alt="阿尔及尔的末代王后" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">阿尔及尔的末代王后</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">1830年法军攻陷阿尔及尔，苏丹逃亡，他的王后却选择留下，率宫女巷战到最后一刻。</em><small class="block text-xs text-gray-400 mt-2">阿尔及利亚/法国 · 电影 · 2027</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0202.html" class="rank-row movie-card" data-title="进军" data-region="德国" data-type="电影" data-year="2027" data-tags="二战,东线战场,德军视角,反战,历史剧情,德国,电影" data-genre="历史剧情">
+  <span class="rank-number">15</span>
+  <img src="./52.jpg" alt="进军" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">进军</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">1942年，一名德国国防军士兵跟着部队向斯大林格勒进军，沿途的“胜利”让他越来越像一具行尸走肉。</em><small class="block text-xs text-gray-400 mt-2">德国 · 电影 · 2027</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0246.html" class="rank-row movie-card" data-title="又一个星期五" data-region="美国" data-type="电影" data-year="2027" data-tags="元恐怖,时间循环,致敬恶搞,解构,血腥幽默,恐怖,喜剧,美国,电影" data-genre="恐怖 / 喜剧">
+  <span class="rank-number">16</span>
+  <img src="./96.jpg" alt="又一个星期五" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">又一个星期五</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">一群恐怖片迷在水晶湖露营，遇到戴着曲棍球面具的杀手，但他们发现杀手只杀不尊重恐怖片套路的人。</em><small class="block text-xs text-gray-400 mt-2">美国 · 电影 · 2027</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0512.html" class="rank-row movie-card" data-title="堂下何人" data-region="中国大陆" data-type="剧集" data-year="2027" data-tags="公案,反转,朝堂斗争,女性视角,悬疑,古装,律政,中国大陆,剧集" data-genre="悬疑、古装、律政">
+  <span class="rank-number">17</span>
+  <img src="./62.jpg" alt="堂下何人" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">堂下何人</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">知县被杀，击鼓鸣冤的寡妇被指认为凶手，师爷却在案卷中发现：死者其实是他自己。</em><small class="block text-xs text-gray-400 mt-2">中国大陆 · 剧集 · 2027</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0708.html" class="rank-row movie-card" data-title="电玩先锋第二季" data-region="美国" data-type="剧集" data-year="2027" data-tags="电竞,VR,元宇宙,团队,高燃,科幻,冒险,美国,剧集" data-genre="科幻 / 冒险">
+  <span class="rank-number">18</span>
+  <img src="./108.jpg" alt="电玩先锋第二季" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">电玩先锋第二季</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">第一季冠军战队全员被困在最新款VR游戏里，输了就会在现实中脑死亡。</em><small class="block text-xs text-gray-400 mt-2">美国 · 剧集 · 2027</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0890.html" class="rank-row movie-card" data-title="大军师司马懿之军师联盟" data-region="中国大陆" data-type="剧集" data-year="2027" data-tags="三国,司马懿,谋略,群像,史诗,历史,权谋,中国大陆,剧集" data-genre="历史 / 权谋">
+  <span class="rank-number">19</span>
+  <img src="./140.jpg" alt="大军师司马懿之军师联盟" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">大军师司马懿之军师联盟</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">司马懿暮年被封相国，却发现自己一生最大的敌人不是诸葛亮，而是曾经的自己。</em><small class="block text-xs text-gray-400 mt-2">中国大陆 · 剧集 · 2027</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-1026.html" class="rank-row movie-card" data-title="性爱欲3世纪" data-region="法国, 意大利" data-type="电影" data-year="2027" data-tags="穿越,贵族,禁忌,文艺,爱情,历史,情色,法国, 意大利,电影" data-genre="爱情, 历史, 情色">
+  <span class="rank-number">20</span>
+  <img src="./126.jpg" alt="性爱欲3世纪" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">性爱欲3世纪</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">一位现代性学女博士在修复一幅18世纪油画时，灵魂被拉入了画中三位贵妇的欲望漩涡。</em><small class="block text-xs text-gray-400 mt-2">法国, 意大利 · 电影 · 2027</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-1217.html" class="rank-row movie-card" data-title="火之鸟772" data-region="日本" data-type="电影" data-year="2027" data-tags="手冢治虫,火之鸟重启,永生实验,科幻,动画,哲学,日本,电影" data-genre="科幻 / 动画 / 哲学">
+  <span class="rank-number">21</span>
+  <img src="./17.jpg" alt="火之鸟772" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">火之鸟772</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">公元772年，一支星际探险队找到了火之鸟，带回地球后发现它其实是外星人的永生监狱。</em><small class="block text-xs text-gray-400 mt-2">日本 · 电影 · 2027</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-1278.html" class="rank-row movie-card" data-title="谁之过" data-region="中国大陆" data-type="剧集" data-year="2027" data-tags="全民审判,网暴,媒体伦理,悲剧,社会派,剧情,犯罪,家庭,中国大陆,剧集" data-genre="剧情, 犯罪, 家庭">
+  <span class="rank-number">22</span>
+  <img src="./78.jpg" alt="谁之过" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">谁之过</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">一个 5 岁女孩死在幼儿园，警察、家长、老师、媒体都在推卸责任，直到第 8 集，凶手竟是所有人。</em><small class="block text-xs text-gray-400 mt-2">中国大陆 · 剧集 · 2027</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-1600.html" class="rank-row movie-card" data-title="进化症候群" data-region="日本" data-type="动画剧集" data-year="2027" data-tags="身体恐怖,悬疑,社会隐喻,寄生,科幻惊悚,日本,动画剧集" data-genre="科幻惊悚">
+  <span class="rank-number">23</span>
+  <img src="./100.jpg" alt="进化症候群" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">进化症候群</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">当代年轻人开始随机“返祖”或“进化”，有人长出鳃，有人脑子变成珊瑚。</em><small class="block text-xs text-gray-400 mt-2">日本 · 动画剧集 · 2027</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-1667.html" class="rank-row movie-card" data-title="蛇蝎美人" data-region="法国" data-type="电影" data-year="2027" data-tags="蛇蝎美人,黑色电影,反转,女性复仇,惊悚,犯罪,情色,法国,电影" data-genre="惊悚 / 犯罪 / 情色">
+  <span class="rank-number">24</span>
+  <img src="./17.jpg" alt="蛇蝎美人" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">蛇蝎美人</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">高级应召女郎被指控谋杀富豪，她的律师在辩护中逐渐发现自己掉入了她设计的陷阱。</em><small class="block text-xs text-gray-400 mt-2">法国 · 电影 · 2027</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-1989.html" class="rank-row movie-card" data-title="改变你，改变我" data-region="中国" data-type="电影" data-year="2027" data-tags="身体互换,父女,理解,代沟,成长,剧情,奇幻,治愈,中国,电影" data-genre="剧情， 奇幻， 治愈">
+  <span class="rank-number">25</span>
+  <img src="./39.jpg" alt="改变你，改变我" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">改变你，改变我</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">叛逆的高中女儿与守旧的父亲突然身体互换，在彼此的生活里发现了对方不为人知的伤口。</em><small class="block text-xs text-gray-400 mt-2">中国 · 电影 · 2027</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0018.html" class="rank-row movie-card" data-title="转生成猫的大叔" data-region="日本" data-type="动画剧集" data-year="2026" data-tags="异世界转生,萌系,社畜治愈,奇幻喜剧,日本,动画剧集" data-genre="奇幻喜剧">
+  <span class="rank-number">26</span>
+  <img src="./18.jpg" alt="转生成猫的大叔" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">转生成猫的大叔</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">五十岁的黑心企业课长意外去世，醒来后竟变成了公司楼下那只高冷的流浪猫。</em><small class="block text-xs text-gray-400 mt-2">日本 · 动画剧集 · 2026</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0019.html" class="rank-row movie-card" data-title="尼禄皇帝" data-region="意大利 / 英国" data-type="剧集" data-year="2026" data-tags="古罗马,暴君,权力游戏,心理剖析,火烧罗马,历史,传记,剧情,意大利 / 英国,剧集" data-genre="历史, 传记, 剧情">
+  <span class="rank-number">27</span>
+  <img src="./19.jpg" alt="尼禄皇帝" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">尼禄皇帝</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">历史将尼禄记载为暴君，但这部剧从他16岁意外登基开始，展示一个文艺青年如何一步步被权力逼疯。</em><small class="block text-xs text-gray-400 mt-2">意大利 / 英国 · 剧集 · 2026</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0052.html" class="rank-row movie-card" data-title="屯门色魔" data-region="香港" data-type="电影" data-year="2026" data-tags="真实案件改编,连环杀手,警匪对峙,心理变态,港式暴力美学,犯罪,惊悚,悬疑,香港,电影" data-genre="犯罪, 惊悚, 悬疑">
+  <span class="rank-number">28</span>
+  <img src="./52.jpg" alt="屯门色魔" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">屯门色魔</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">九十年代震惊香港的连环奸杀案重现，一个沉默的出租车司机，在屯门夜色中化身恶魔。</em><small class="block text-xs text-gray-400 mt-2">香港 · 电影 · 2026</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0059.html" class="rank-row movie-card" data-title="原来如此" data-region="中国台湾" data-type="电影" data-year="2026" data-tags="因果报应,单元叙事,多线交织,社会派,高概念,悬疑,犯罪,剧情,中国台湾,电影" data-genre="悬疑 / 犯罪 / 剧情">
+  <span class="rank-number">29</span>
+  <img src="./59.jpg" alt="原来如此" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">原来如此</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">六个人收到了同一个匿名包裹，里面是六份不同的死亡预告，而预告的日期正是他们各自犯下不可饶恕之罪的同一天。</em><small class="block text-xs text-gray-400 mt-2">中国台湾 · 电影 · 2026</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0064.html" class="rank-row movie-card" data-title="古戒奇谈" data-region="中国香港" data-type="电影" data-year="2026" data-tags="古董,诅咒,轮回,民俗恐怖,反转,悬疑,惊悚,奇幻,中国香港,电影" data-genre="悬疑, 惊悚, 奇幻">
+  <span class="rank-number">30</span>
+  <img src="./64.jpg" alt="古戒奇谈" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">古戒奇谈</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">一场古董拍卖会上，一枚出土的战国玉戒让所有佩戴者接连离奇死亡，警方调查发现，这枚戒指似乎会回应人心底的恶念。</em><small class="block text-xs text-gray-400 mt-2">中国香港 · 电影 · 2026</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0067.html" class="rank-row movie-card" data-title="乐透美国梦" data-region="美国" data-type="电影" data-year="2026" data-tags="移民,彩票,黑色幽默,阶层,喜剧,剧情,美国,电影" data-genre="喜剧 / 剧情">
+  <span class="rank-number">31</span>
+  <img src="./67.jpg" alt="乐透美国梦" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">乐透美国梦</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">一群华人移民合买彩票中得亿万巨奖，但中奖彩票却在争吵中被洗衣机搅成了纸浆。</em><small class="block text-xs text-gray-400 mt-2">美国 · 电影 · 2026</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0136.html" class="rank-row movie-card" data-title="目标一" data-region="法国 / 加拿大" data-type="电影" data-year="2026" data-tags="狙击手,跨国追杀,秘密行动,道德困境,双面间谍,动作,惊悚,政治,法国 / 加拿大,电影" data-genre="动作 / 惊悚 / 政治">
+  <span class="rank-number">32</span>
+  <img src="./136.jpg" alt="目标一" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">目标一</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">一名顶级狙击手接到刺杀“全球头号恐怖分子”的任务，却发现目标人物正是自己失散二十年的儿子。</em><small class="block text-xs text-gray-400 mt-2">法国 / 加拿大 · 电影 · 2026</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0162.html" class="rank-row movie-card" data-title="杀人罪行" data-region="美国" data-type="电影" data-year="2026" data-tags="律政,陪审团,道德困境,法庭戏,犯罪,剧情,惊悚,美国,电影" data-genre="犯罪， 剧情， 惊悚">
+  <span class="rank-number">33</span>
+  <img src="./12.jpg" alt="杀人罪行" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">杀人罪行</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">一名坚持疑罪从无的律师，在为连环杀手辩护时发现对方竟真是无辜的，而真凶就在陪审团中。</em><small class="block text-xs text-gray-400 mt-2">美国 · 电影 · 2026</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0179.html" class="rank-row movie-card" data-title="末时" data-region="美国" data-type="剧集" data-year="2026" data-tags="时间逆流,末日循环,因果悖论,高概念,科幻,惊悚,美国,剧集" data-genre="科幻 / 惊悚">
+  <span class="rank-number">34</span>
+  <img src="./29.jpg" alt="末时" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">末时</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">上帝按下世界重启键后，只有一座城市的时间线从毁灭开始向出生倒流，人们先死而后生。</em><small class="block text-xs text-gray-400 mt-2">美国 · 剧集 · 2026</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0274.html" class="rank-row movie-card" data-title="九死" data-region="中国大陆" data-type="电影" data-year="2026" data-tags="密室,极限逃生,复仇,反转,悬疑,犯罪,动作,中国大陆,电影" data-genre="悬疑 / 犯罪 / 动作">
+  <span class="rank-number">35</span>
+  <img src="./124.jpg" alt="九死" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">九死</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">九个陌生人被关进九间密室，每个人脑中都植入了倒计时炸弹，只有一个人能活着出去。</em><small class="block text-xs text-gray-400 mt-2">中国大陆 · 电影 · 2026</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0282.html" class="rank-row movie-card" data-title="曼尼酒店第二季" data-region="英国" data-type="剧集" data-year="2026" data-tags="酒店管理,英式幽默,职场,群像,社会缩影,喜剧,剧情,英国,剧集" data-genre="喜剧，剧情">
+  <span class="rank-number">36</span>
+  <img src="./132.jpg" alt="曼尼酒店第二季" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">曼尼酒店第二季</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">回到那家混乱的曼尼酒店，新来的AI经理试图用算法管理一切，却把整个酒店带向了更疯狂的混乱。</em><small class="block text-xs text-gray-400 mt-2">英国 · 剧集 · 2026</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0294.html" class="rank-row movie-card" data-title="终极一家" data-region="中国台湾" data-type="剧集" data-year="2026" data-tags="异能,多元宇宙,爆笑家庭,热血守护,科幻,家庭,喜剧,中国台湾,剧集" data-genre="科幻 / 家庭 / 喜剧">
+  <span class="rank-number">37</span>
+  <img src="./144.jpg" alt="终极一家" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">终极一家</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">时空秩序崩塌，分布在十二个平行宇宙中的“夏家”成员被迫首次团聚，共同修补即将毁灭的现实。</em><small class="block text-xs text-gray-400 mt-2">中国台湾 · 剧集 · 2026</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0341.html" class="rank-row movie-card" data-title="勇敢的小裁缝" data-region="法国 / 德国" data-type="动画电影" data-year="2026" data-tags="格林童话,反套路,女性主义,成长,动画,冒险,童话,法国 / 德国,动画电影" data-genre="动画 / 冒险 / 童话">
+  <span class="rank-number">38</span>
+  <img src="./41.jpg" alt="勇敢的小裁缝" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">勇敢的小裁缝</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">改编自格林童话，小裁缝不再靠吹牛，而是用针线和智慧拯救被诅咒的王国。</em><small class="block text-xs text-gray-400 mt-2">法国 / 德国 · 动画电影 · 2026</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0399.html" class="rank-row movie-card" data-title="白水之怒" data-region="日本" data-type="电影" data-year="2026" data-tags="自来水污染,集体诉讼,小镇疑云,法律剧,悬疑,犯罪,日本,电影" data-genre="悬疑 / 犯罪">
+  <span class="rank-number">39</span>
+  <img src="./99.jpg" alt="白水之怒" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">白水之怒</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">小镇二十年无癌症，一夜之间爆发四百例，所有矛头都指向镇上唯一的“慈善家”。</em><small class="block text-xs text-gray-400 mt-2">日本 · 电影 · 2026</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0433.html" class="rank-row movie-card" data-title="圣凯瑟琳" data-region="意大利" data-type="电影" data-year="2026" data-tags="修道院,失踪,禁地,圣女,悬疑,惊悚,宗教,意大利,电影" data-genre="悬疑，惊悚，宗教">
+  <span class="rank-number">40</span>
+  <img src="./133.jpg" alt="圣凯瑟琳" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">圣凯瑟琳</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">一座与世隔绝的修道院里，名为凯瑟琳的见习修女失踪，调查者发现这里关着所有“叫凯瑟琳”的女人。</em><small class="block text-xs text-gray-400 mt-2">意大利 · 电影 · 2026</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0440.html" class="rank-row movie-card" data-title="摩登情爱第二季" data-region="美国" data-type="剧集" data-year="2026" data-tags="都市情感,单元剧,温暖治愈,真实故事改编,爱情生活,美国,剧集" data-genre="爱情生活">
+  <span class="rank-number">41</span>
+  <img src="./140.jpg" alt="摩登情爱第二季" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">摩登情爱第二季</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">继续挖掘《纽约时报》专栏中的真实人性故事，这一次是关于门卫、流浪汉与亿万富翁的情感奇遇。</em><small class="block text-xs text-gray-400 mt-2">美国 · 剧集 · 2026</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0481.html" class="rank-row movie-card" data-title="哥吉拉×机械哥吉拉" data-region="日本" data-type="电影" data-year="2026" data-tags="哥斯拉,机甲大战,人类野心,科幻,动作,怪兽,日本,电影" data-genre="科幻， 动作， 怪兽">
+  <span class="rank-number">42</span>
+  <img src="./31.jpg" alt="哥吉拉×机械哥吉拉" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">哥吉拉×机械哥吉拉</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">人类用哥斯拉的残骸造出了机械哥斯拉，却发现对付怪兽最好的武器，其实是另一个怪兽的愤怒。</em><small class="block text-xs text-gray-400 mt-2">日本 · 电影 · 2026</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0509.html" class="rank-row movie-card" data-title="真假学园3" data-region="日本" data-type="电视剧 / 续集" data-year="2026" data-tags="热血,不良少女,格斗,女团,剧情,动作,校园,日本,电视剧 / 续集" data-genre="剧情 / 动作 / 校园">
+  <span class="rank-number">43</span>
+  <img src="./59.jpg" alt="真假学园3" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">真假学园3</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">传说中的最强不良学校再次爆发大战，这一次，她们要对抗的是来自精英学校的阴谋。</em><small class="block text-xs text-gray-400 mt-2">日本 · 电视剧 / 续集 · 2026</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0524.html" class="rank-row movie-card" data-title="碧波女贼" data-region="法国 / 意大利" data-type="电影" data-year="2026" data-tags="地中海盗,女性团伙,时尚元素,猫鼠游戏,反套路,犯罪,冒险,喜剧,法国 / 意大利,电影" data-genre="犯罪 / 冒险 / 喜剧">
+  <span class="rank-number">44</span>
+  <img src="./74.jpg" alt="碧波女贼" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">碧波女贼</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">四位被生活欺压的普通女人，穿上高定礼服驾着游艇，在地中海上演现代版侠盗罗宾汉。</em><small class="block text-xs text-gray-400 mt-2">法国 / 意大利 · 电影 · 2026</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0535.html" class="rank-row movie-card" data-title="孤独无尽" data-region="法国 / 德国" data-type="电影" data-year="2026" data-tags="太空,心理惊悚,克隆,存在主义,剧情,科幻,心理,法国 / 德国,电影" data-genre="剧情 / 科幻 / 心理">
+  <span class="rank-number">45</span>
+  <img src="./85.jpg" alt="孤独无尽" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">孤独无尽</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">一艘飞往比邻星的飞船上，唯一的宇航员发现每隔半年就会有一个“自己”从冷冻舱醒来。</em><small class="block text-xs text-gray-400 mt-2">法国 / 德国 · 电影 · 2026</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0599.html" class="rank-row movie-card" data-title="第三类接触" data-region="美国" data-type="电影" data-year="2026" data-tags="外星文明,语言学,记忆交换,封闭空间,科幻,悬疑,美国,电影" data-genre="科幻 / 悬疑">
+  <span class="rank-number">46</span>
+  <img src="./149.jpg" alt="第三类接触" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">第三类接触</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">一位自闭症语言学家破译了外星信号，却发现对方正在用她的童年记忆作为“付款”。</em><small class="block text-xs text-gray-400 mt-2">美国 · 电影 · 2026</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0604.html" class="rank-row movie-card" data-title="残疾人的未来" data-region="日本" data-type="剧集" data-year="2026" data-tags="身体改造,残障权利,反乌托邦,科幻,社会,剧情,日本,剧集" data-genre="科幻 / 社会 / 剧情">
+  <span class="rank-number">47</span>
+  <img src="./4.jpg" alt="残疾人的未来" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">残疾人的未来</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">在“基因完美”的未来，一群保留着先天残疾的人被视为极端分子，他们决定建立一个只有残疾人的国家。</em><small class="block text-xs text-gray-400 mt-2">日本 · 剧集 · 2026</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0632.html" class="rank-row movie-card" data-title="爱在弹指间" data-region="韩国" data-type="电影" data-year="2026" data-tags="手机APP,命中注定,时间回溯,治愈,爱情,奇幻,剧情,韩国,电影" data-genre="爱情、奇幻、剧情">
+  <span class="rank-number">48</span>
+  <img src="./32.jpg" alt="爱在弹指间" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">爱在弹指间</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">一个能让你看到“与身边人未来恋爱时长”的APP上线后，一个不敢恋爱的女孩发现自己与所有人显示都是0天，除了一个人。</em><small class="block text-xs text-gray-400 mt-2">韩国 · 电影 · 2026</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0637.html" class="rank-row movie-card" data-title="照片中的女孩" data-region="美国" data-type="电影" data-year="2026" data-tags="暗网,复仇,视觉诡计,惊悚,悬疑,美国,电影" data-genre="惊悚, 悬疑">
+  <span class="rank-number">49</span>
+  <img src="./37.jpg" alt="照片中的女孩" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">照片中的女孩</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">一张来自暗网的照片预言了她下个月的死亡，而照片里现在的她正在笑。</em><small class="block text-xs text-gray-400 mt-2">美国 · 电影 · 2026</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0754.html" class="rank-row movie-card" data-title="贤者之爱" data-region="日本" data-type="剧集" data-year="2026" data-tags="不伦,养成计划,复仇,年龄差,心理战,剧情,爱情,悬疑,日本,剧集" data-genre="剧情 / 爱情 / 悬疑">
+  <span class="rank-number">50</span>
+  <img src="./4.jpg" alt="贤者之爱" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">贤者之爱</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">为了报复抢走初恋的闺蜜，她花了二十年将闺蜜的儿子培养成只爱自己的完美情人。</em><small class="block text-xs text-gray-400 mt-2">日本 · 剧集 · 2026</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0788.html" class="rank-row movie-card" data-title="后人类传说" data-region="英国" data-type="剧集" data-year="2026" data-tags="末世,基因改造,伦理,部落冲突,科幻,剧情,英国,剧集" data-genre="科幻 / 剧情">
+  <span class="rank-number">51</span>
+  <img src="./38.jpg" alt="后人类传说" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">后人类传说</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">核战后的废墟上，最后一群纯种人类必须与“后人类”变异部落共存，却发现彼此的血可以治愈核辐射。</em><small class="block text-xs text-gray-400 mt-2">英国 · 剧集 · 2026</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0801.html" class="rank-row movie-card" data-title="异哉女性" data-region="日本" data-type="剧集" data-year="2026" data-tags="女性群像,社会派,职场,复仇,反转,剧情,悬疑,女性,日本,剧集" data-genre="剧情/悬疑/女性">
+  <span class="rank-number">52</span>
+  <img src="./51.jpg" alt="异哉女性" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">异哉女性</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">在一家号称“女性天堂”的巨型企业里，连续发生了四起女高管死亡事件，调查发现，她们都曾加入过一个名为“异哉”的秘密读书会。</em><small class="block text-xs text-gray-400 mt-2">日本 · 剧集 · 2026</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0821.html" class="rank-row movie-card" data-title="金陵秘事" data-region="中国大陆" data-type="剧集" data-year="2026" data-tags="民国奇案,文物,家族恩怨,悬疑,历史,谍战,中国大陆,剧集" data-genre="悬疑, 历史, 谍战">
+  <span class="rank-number">53</span>
+  <img src="./71.jpg" alt="金陵秘事" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">金陵秘事</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">1948年的南京，一座闹鬼的宅子、一张龙袍照片、三起连环命案，揭开了一个王朝的余晖。</em><small class="block text-xs text-gray-400 mt-2">中国大陆 · 剧集 · 2026</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0880.html" class="rank-row movie-card" data-title="抗日奇侠" data-region="中国大陆" data-type="电影" data-year="2026" data-tags="超级英雄,武侠,抗敌,国仇,异能,动作,战争,奇幻,中国大陆,电影" data-genre="动作, 战争, 奇幻">
+  <span class="rank-number">54</span>
+  <img src="./130.jpg" alt="抗日奇侠" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">抗日奇侠</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">1942年，一个与先祖“兵神”共享血脉的农村铁匠，用祖传秘术打造了一支拥有微弱异能的不死小队。</em><small class="block text-xs text-gray-400 mt-2">中国大陆 · 电影 · 2026</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0908.html" class="rank-row movie-card" data-title="地球回音" data-region="澳大利亚" data-type="电影" data-year="2026" data-tags="时间循环,父女,末日,温情,烧脑,科幻,家庭,澳大利亚,电影" data-genre="科幻 / 家庭">
+  <span class="rank-number">55</span>
+  <img src="./8.jpg" alt="地球回音" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">地球回音</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">女儿发现父亲留下的一段视频，内容竟是“如果你在看这个，说明我成功启动了时间循环”。</em><small class="block text-xs text-gray-400 mt-2">澳大利亚 · 电影 · 2026</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0951.html" class="rank-row movie-card" data-title="至高侵袭" data-region="英国" data-type="电影" data-year="2026" data-tags="单兵外骨骼,硬核科幻,反战,科幻,动作,战争,英国,电影" data-genre="科幻, 动作, 战争">
+  <span class="rank-number">56</span>
+  <img src="./51.jpg" alt="至高侵袭" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">至高侵袭</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">一款能让人心变成钢铁的超级战士装甲，在战场上失控，开始自主屠杀敌我双方。</em><small class="block text-xs text-gray-400 mt-2">英国 · 电影 · 2026</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0967.html" class="rank-row movie-card" data-title="毁天灭地" data-region="美国" data-type="电影" data-year="2026" data-tags="地心危机,超级武器,父子对决,视觉奇观,动作,科幻,美国,电影" data-genre="动作/科幻">
+  <span class="rank-number">57</span>
+  <img src="./67.jpg" alt="毁天灭地" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">毁天灭地</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">为了拯救沉没的地表，父子科学家一个要引爆地核，一个要炸毁月球，谁才是救世主？</em><small class="block text-xs text-gray-400 mt-2">美国 · 电影 · 2026</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0982.html" class="rank-row movie-card" data-title="胡椒加糖杏仁" data-region="法国 / 意大利" data-type="电影" data-year="2026" data-tags="甜品,家庭餐厅,固执,和解,南法,剧情,美食,爱情,法国 / 意大利,电影" data-genre="剧情、美食、爱情">
+  <span class="rank-number">58</span>
+  <img src="./82.jpg" alt="胡椒加糖杏仁" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">胡椒加糖杏仁</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">巴黎米其林三星女主厨因味觉失灵回到南法小镇，祖母教她做一道“胡椒加糖杏仁”，味道奇诡却让她重新尝到了人间。</em><small class="block text-xs text-gray-400 mt-2">法国 / 意大利 · 电影 · 2026</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-1005.html" class="rank-row movie-card" data-title="明日之城" data-region="美国" data-type="电影" data-year="2026" data-tags="近未来,乌托邦,记忆删除,社会阶层,亲情,科幻,剧情,美国,电影" data-genre="科幻 / 剧情">
+  <span class="rank-number">59</span>
+  <img src="./105.jpg" alt="明日之城" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">明日之城</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">在完美无缺的未来城市里，一名清洁工发现了被删除的记忆垃圾场。</em><small class="block text-xs text-gray-400 mt-2">美国 · 电影 · 2026</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-1023.html" class="rank-row movie-card" data-title="那些爱人" data-region="英国" data-type="剧集" data-year="2026" data-tags="多线叙事,伦敦,约会文化,群像,爱情喜剧,英国,剧集" data-genre="爱情喜剧">
+  <span class="rank-number">60</span>
+  <img src="./123.jpg" alt="那些爱人" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">那些爱人</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">伦敦同一栋公寓楼里，五组年龄、性别、性向各异的“爱人”，在同一晚经历了各自关系中最重要的夜晚。</em><small class="block text-xs text-gray-400 mt-2">英国 · 剧集 · 2026</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-1041.html" class="rank-row movie-card" data-title="匈奴大帝" data-region="匈牙利 / 中国" data-type="电影" data-year="2026" data-tags="阿提拉,史诗,东西方碰撞,历史,战争,传记,匈牙利 / 中国,电影" data-genre="历史 / 战争 / 传记">
+  <span class="rank-number">61</span>
+  <img src="./141.jpg" alt="匈奴大帝" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">匈奴大帝</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">从匈奴孤儿到“上帝之鞭”，阿提拉的一生被重新讲述——不是野蛮人，而是被罗马背叛的结盟者。</em><small class="block text-xs text-gray-400 mt-2">匈牙利 / 中国 · 电影 · 2026</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-1048.html" class="rank-row movie-card" data-title="军事统制区域 八二〇地带" data-region="日本" data-type="动画电影" data-year="2026" data-tags="军事禁区,人体实验,少年兵,反乌托邦,战争,科幻,悬疑,日本,动画电影" data-genre="战争 / 科幻 / 悬疑">
+  <span class="rank-number">62</span>
+  <img src="./148.jpg" alt="军事统制区域 八二〇地带" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">军事统制区域 八二〇地带</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">七个少年被送进“八二〇地带”，他们被告知这是最后的军事演习，但里面关着的不是敌人，是他们的复制体。</em><small class="block text-xs text-gray-400 mt-2">日本 · 动画电影 · 2026</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-1053.html" class="rank-row movie-card" data-title="一起同过窗第三季" data-region="中国大陆" data-type="剧集" data-year="2026" data-tags="青春,校园,群像,剧情,喜剧,中国大陆,剧集" data-genre="剧情, 喜剧">
+  <span class="rank-number">63</span>
+  <img src="./3.jpg" alt="一起同过窗第三季" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">一起同过窗第三季</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">大学时光过半，曾经的伙伴们面临实习、考研与出国的岔路口，他们的友情与爱情将迎来最终的考验。</em><small class="block text-xs text-gray-400 mt-2">中国大陆 · 剧集 · 2026</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-1069.html" class="rank-row movie-card" data-title="26种死法2" data-region="美国" data-type="电影" data-year="2026" data-tags="字母杀手,连环杀人,血腥,解谜,恐怖,惊悚,犯罪,美国,电影" data-genre="恐怖, 惊悚, 犯罪">
+  <span class="rank-number">64</span>
+  <img src="./19.jpg" alt="26种死法2" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">26种死法2</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">疯子杀人魔再次现身，这次他按照字母表倒序杀人，并给警方寄出了下一名受害者的“活体拼图”。</em><small class="block text-xs text-gray-400 mt-2">美国 · 电影 · 2026</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-1089.html" class="rank-row movie-card" data-title="扒手" data-region="法国 / 日本" data-type="电影" data-year="2026" data-tags="偷窃,手技,孤独,存在主义,黑白,犯罪,剧情,法国 / 日本,电影" data-genre="犯罪 / 剧情">
+  <span class="rank-number">65</span>
+  <img src="./39.jpg" alt="扒手" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">扒手</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">一个痴迷于手指艺术的扒手，把每一次行窃都当作对抗虚无的仪式，直到他偷了一个杀手。</em><small class="block text-xs text-gray-400 mt-2">法国 / 日本 · 电影 · 2026</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-1094.html" class="rank-row movie-card" data-title="泰若星球" data-region="美国" data-type="电影/动画" data-year="2026" data-tags="环保,外星生态,机械文明,启蒙之旅,科幻动画,美国,电影/动画" data-genre="科幻动画">
+  <span class="rank-number">66</span>
+  <img src="./44.jpg" alt="泰若星球" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">泰若星球</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">在全是机械生命的“泰若星”上，最后一个有机生命体——一朵会唱歌的花被判处死刑，一名有缺陷的机器人法官决定为它辩护。</em><small class="block text-xs text-gray-400 mt-2">美国 · 电影/动画 · 2026</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-1118.html" class="rank-row movie-card" data-title="法庭" data-region="美国" data-type="剧集" data-year="2026" data-tags="陪审团,密室推理,限时辩论,群像戏,高智商,剧情,悬疑,律政,美国,剧集" data-genre="剧情, 悬疑, 律政">
+  <span class="rank-number">67</span>
+  <img src="./68.jpg" alt="法庭" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">法庭</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">十二个陌生人被锁进一间陪审团密室，门外贴着纸条：“你们有48小时，选错凶手，所有人都会死。”</em><small class="block text-xs text-gray-400 mt-2">美国 · 剧集 · 2026</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-1140.html" class="rank-row movie-card" data-title="史瑞克的万圣游戏" data-region="美国" data-type="动画电影" data-year="2026" data-tags="恶搞童话,万圣节,变身诅咒,吐槽向,喜剧,奇幻,美国,动画电影" data-genre="喜剧, 奇幻">
+  <span class="rank-number">68</span>
+  <img src="./90.jpg" alt="史瑞克的万圣游戏" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">史瑞克的万圣游戏</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">史瑞克被卷入万圣节魔咒，每敲一扇门就会变身成一位经典恐怖片反派。</em><small class="block text-xs text-gray-400 mt-2">美国 · 动画电影 · 2026</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-1174.html" class="rank-row movie-card" data-title="主播2025" data-region="中国大陆" data-type="电影" data-year="2026" data-tags="直播,近未来,虚拟偶像,AI换脸,网络迷因,悬疑,惊悚,科幻,中国大陆,电影" data-genre="悬疑 / 惊悚 / 科幻">
+  <span class="rank-number">69</span>
+  <img src="./124.jpg" alt="主播2025" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">主播2025</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">2025年，一个过气主播买来“顶流AI主播”的换脸模型，却发现自己逐渐被AI吞噬灵魂。</em><small class="block text-xs text-gray-400 mt-2">中国大陆 · 电影 · 2026</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-1179.html" class="rank-row movie-card" data-title="嫁入豪门" data-region="中国香港" data-type="电视剧" data-year="2026" data-tags="替身新娘,家族内斗,反转不断,大女主逆袭,剧情,爱情,商战,中国香港,电视剧" data-genre="剧情 / 爱情 / 商战">
+  <span class="rank-number">70</span>
+  <img src="./129.jpg" alt="嫁入豪门" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">嫁入豪门</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">妹妹代替姐姐嫁入百亿豪门，却在新婚夜发现新郎是被家族放弃的废柴长子，而真正的猎物是她自己。</em><small class="block text-xs text-gray-400 mt-2">中国香港 · 电视剧 · 2026</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-1255.html" class="rank-row movie-card" data-title="麻花特开心第二季" data-region="中国大陆" data-type="剧集" data-year="2026" data-tags="即兴喜剧,团综,荒诞,喜剧,真人秀,中国大陆,剧集" data-genre="喜剧、真人秀">
+  <span class="rank-number">71</span>
+  <img src="./55.jpg" alt="麻花特开心第二季" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">麻花特开心第二季</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">麻花天团接手一座濒临倒闭的主题乐园，必须用七十二小时用欢乐将它“救活”。</em><small class="block text-xs text-gray-400 mt-2">中国大陆 · 剧集 · 2026</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-1309.html" class="rank-row movie-card" data-title="特洛伊" data-region="美国" data-type="剧集" data-year="2026" data-tags="史诗翻拍,众神视角,多线叙事,删减版争议,历史,战争,美国,剧集" data-genre="历史, 战争">
+  <span class="rank-number">72</span>
+  <img src="./109.jpg" alt="特洛伊" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">特洛伊</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">从奥林匹斯众神的角度重写特洛伊战争，人类是棋子，而这场战争真正的赌注是“谁当众神之王”。</em><small class="block text-xs text-gray-400 mt-2">美国 · 剧集 · 2026</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-1319.html" class="rank-row movie-card" data-title="霹雳九皇座" data-region="中国台湾" data-type="剧集" data-year="2026" data-tags="霹雳布袋戏,神话,群像剧,玄幻,奇幻,武侠,布袋戏,中国台湾,剧集" data-genre="奇幻、武侠、布袋戏">
+  <span class="rank-number">73</span>
+  <img src="./119.jpg" alt="霹雳九皇座" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">霹雳九皇座</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">九位身怀绝技的皇者后代被选入天宫，他们必须在一座漂浮的岛屿上活过九夜，以决定新一届人皇的归属。</em><small class="block text-xs text-gray-400 mt-2">中国台湾 · 剧集 · 2026</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-1396.html" class="rank-row movie-card" data-title="带我去飞" data-region="中国香港" data-type="电影" data-year="2026" data-tags="亲情催泪,梦想追逐,硬核科普,科幻,家庭,冒险,中国香港,电影" data-genre="科幻 / 家庭 / 冒险">
+  <span class="rank-number">74</span>
+  <img src="./46.jpg" alt="带我去飞" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">带我去飞</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">为了完成罹难航天员父亲的遗愿，患有恐高症的女儿决定改造一颗旧卫星送上天。</em><small class="block text-xs text-gray-400 mt-2">中国香港 · 电影 · 2026</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-1406.html" class="rank-row movie-card" data-title="枭雄末路" data-region="中国香港" data-type="电影" data-year="2026" data-tags="黑帮,老年,迟暮,人性,宿命,犯罪,剧情,中国香港,电影" data-genre="犯罪，剧情">
+  <span class="rank-number">75</span>
+  <img src="./56.jpg" alt="枭雄末路" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">枭雄末路</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">曾经叱咤风云的江湖大佬出狱后发现世界已变，他想做个好人，但过去的仇家和如今的年轻匪帮都不打算放过他。</em><small class="block text-xs text-gray-400 mt-2">中国香港 · 电影 · 2026</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-1419.html" class="rank-row movie-card" data-title="笨拙之极的上野" data-region="日本" data-type="剧集" data-year="2026" data-tags="漫改,科学少女,笨拙恋爱,喜剧,校园,日本,剧集" data-genre="喜剧、校园">
+  <span class="rank-number">76</span>
+  <img src="./69.jpg" alt="笨拙之极的上野" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">笨拙之极的上野</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">天才科学少女上野，每次想向暗恋的学弟田中选择告白，都会做出一个惊天动地的大发明。</em><small class="block text-xs text-gray-400 mt-2">日本 · 剧集 · 2026</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-1452.html" class="rank-row movie-card" data-title="波尔多囚犯" data-region="法国" data-type="电影" data-year="2026" data-tags="监狱实验,身份互换,人性善恶,剧情,法国,电影" data-genre="剧情">
+  <span class="rank-number">77</span>
+  <img src="./102.jpg" alt="波尔多囚犯" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">波尔多囚犯</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">一个富商因酒驾入狱，他的替身在外替他经营酒庄，一年后，谁都分不清谁是谁了。</em><small class="block text-xs text-gray-400 mt-2">法国 · 电影 · 2026</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-1478.html" class="rank-row movie-card" data-title="通灵王" data-region="日本" data-type="剧集" data-year="2026" data-tags="巫术,灵界,武道家,神明附体,动作,奇幻,冒险,日本,剧集" data-genre="动作，奇幻，冒险">
+  <span class="rank-number">78</span>
+  <img src="./128.jpg" alt="通灵王" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">通灵王</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">日本最后一位通灵王继承者，不是隐居山林的老人，而是一个打地下黑拳的17岁少女。</em><small class="block text-xs text-gray-400 mt-2">日本 · 剧集 · 2026</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-1488.html" class="rank-row movie-card" data-title="极乐" data-region="美国" data-type="电影" data-year="2026" data-tags="意识上传,反乌托邦,永生,人体电池,科幻,惊悚,动作,美国,电影" data-genre="科幻, 惊悚, 动作">
+  <span class="rank-number">79</span>
+  <img src="./138.jpg" alt="极乐" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">极乐</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">开发出“永生芯片”的CEO自杀身亡，上传的意识却在云端开始屠杀活人。</em><small class="block text-xs text-gray-400 mt-2">美国 · 电影 · 2026</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-1521.html" class="rank-row movie-card" data-title="特工妈咪" data-region="美国" data-type="电影" data-year="2026" data-tags="中年女性,特工,家庭主妇,反差萌,动作,喜剧,美国,电影" data-genre="动作， 喜剧">
+  <span class="rank-number">80</span>
+  <img src="./21.jpg" alt="特工妈咪" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">特工妈咪</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">一名曾经的王牌特工隐退后成了全职妈妈，当她儿子被绑架时，她发现自己最大的敌人不是恐怖分子，而是小区的停车位。</em><small class="block text-xs text-gray-400 mt-2">美国 · 电影 · 2026</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-1539.html" class="rank-row movie-card" data-title="神秘博士与戴立克" data-region="英国" data-type="电影" data-year="2026" data-tags="时间旅行,外星人,博士,经典反派,科幻,冒险,英国,电影" data-genre="科幻, 冒险">
+  <span class="rank-number">81</span>
+  <img src="./39.jpg" alt="神秘博士与戴立克" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">神秘博士与戴立克</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">第15任博士发现，戴立克这次不毁灭人类，反而要保护人类——因为人类灭绝将导致更可怕的灾难。</em><small class="block text-xs text-gray-400 mt-2">英国 · 电影 · 2026</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-1562.html" class="rank-row movie-card" data-title="中国人的流浪记" data-region="日本 / 中国大陆" data-type="剧集 年代, 剧情" data-year="2026" data-tags="华人,日本,平成时代,奋斗,年代,剧情,日本 / 中国大陆,剧集 年代, 剧情" data-genre="年代, 剧情">
+  <span class="rank-number">82</span>
+  <img src="./62.jpg" alt="中国人的流浪记" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">中国人的流浪记</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">1991-2021，三代在日华人三十年间的生存史诗，从偷渡客到IT新贵，身份与故乡的困局。</em><small class="block text-xs text-gray-400 mt-2">日本 / 中国大陆 · 剧集 年代, 剧情 · 2026</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-1567.html" class="rank-row movie-card" data-title="难以置信的怪物" data-region="加拿大" data-type="电影" data-year="2026" data-tags="克苏鲁,心理恐惧,幻觉,深海,未知,恐怖,科幻,加拿大,电影" data-genre="恐怖 / 科幻">
+  <span class="rank-number">83</span>
+  <img src="./67.jpg" alt="难以置信的怪物" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">难以置信的怪物</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">深海钻井平台挖出神秘化石，工人的恐惧情绪开始实体化，每个人看到的“怪物”都是自己最怕的东西。</em><small class="block text-xs text-gray-400 mt-2">加拿大 · 电影 · 2026</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-1578.html" class="rank-row movie-card" data-title="六人行：当我们又在一起" data-region="美国" data-type="电影/特别篇" data-year="2026" data-tags="情怀,老友记,重聚,生活喜剧,纽约,喜剧,剧情,美国,电影/特别篇" data-genre="喜剧， 剧情">
+  <span class="rank-number">84</span>
+  <img src="./78.jpg" alt="六人行：当我们又在一起" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">六人行：当我们又在一起</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">20年后，莫妮卡的那间紫色公寓面临拆迁，六位老友为此最后一次重聚在纽约。</em><small class="block text-xs text-gray-400 mt-2">美国 · 电影/特别篇 · 2026</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-1651.html" class="rank-row movie-card" data-title="神捕十三娘" data-region="中国大陆" data-type="剧集" data-year="2026" data-tags="女捕快,明朝,探案,江湖,轻喜剧,古装,悬疑,动作,中国大陆,剧集" data-genre="古装 / 悬疑 / 动作">
+  <span class="rank-number">85</span>
+  <img src="./1.jpg" alt="神捕十三娘" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">神捕十三娘</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">明朝万历年间，江南第一名妓因精通微表情观察被破格录用为捕快，专破花街柳巷中的奇案，人送外号“十三娘”。</em><small class="block text-xs text-gray-400 mt-2">中国大陆 · 剧集 · 2026</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-1792.html" class="rank-row movie-card" data-title="孤单的豌豆" data-region="日本" data-type="剧集" data-year="2026" data-tags="自闭症,母女,成长,剧情,家庭,日本,剧集" data-genre="剧情 / 家庭">
+  <span class="rank-number">86</span>
+  <img src="./142.jpg" alt="孤单的豌豆" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">孤单的豌豆</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">一个患有自闭症的小女孩，用一颗豌豆改变了整个破碎的家庭。</em><small class="block text-xs text-gray-400 mt-2">日本 · 剧集 · 2026</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-1797.html" class="rank-row movie-card" data-title="失去的国度" data-region="美国" data-type="电影" data-year="2026" data-tags="平行宇宙,记忆删除,高概念科幻,烧脑,寻回自我,科幻,悬疑,美国,电影" data-genre="科幻 / 悬疑">
+  <span class="rank-number">87</span>
+  <img src="./147.jpg" alt="失去的国度" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">失去的国度</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">为了治疗创伤，她删除了关于“亚特拉”的所有记忆，直到那个国度的难民开始追杀她。</em><small class="block text-xs text-gray-400 mt-2">美国 · 电影 · 2026</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-1812.html" class="rank-row movie-card" data-title="卓别灵传" data-region="美国 / 英国" data-type="电影" data-year="2026" data-tags="喜剧之王,麦卡锡主义,流亡,艺术与政治,戏中戏,传记,剧情,历史,美国 / 英国,电影" data-genre="传记 / 剧情 / 历史">
+  <span class="rank-number">88</span>
+  <img src="./12.jpg" alt="卓别灵传" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">卓别灵传</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">查理·卓别林晚年接受采访，在回忆与虚构交织中，重新审视自己与流浪汉夏尔洛的纠缠一生。</em><small class="block text-xs text-gray-400 mt-2">美国 / 英国 · 电影 · 2026</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-1856.html" class="rank-row movie-card" data-title="雪牦牛" data-region="中国大陆" data-type="电影" data-year="2026" data-tags="西藏,朝圣,人与自然,硬汉,冒险,剧情,中国大陆,电影" data-genre="冒险/剧情">
+  <span class="rank-number">89</span>
+  <img src="./56.jpg" alt="雪牦牛" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">雪牦牛</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">为了将意外身亡的登山队长遗体送下山，五位藏族向导在暴风雪中对抗的不是严寒，而是自己内心的“恶魔”。</em><small class="block text-xs text-gray-400 mt-2">中国大陆 · 电影 · 2026</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-1861.html" class="rank-row movie-card" data-title="漂浮于太空的教室" data-region="日本" data-type="剧集" data-year="2026" data-tags="太空漂流,毕业生,绝望与希望,封闭成长,科幻,青春,日本,剧集" data-genre="科幻 / 青春">
+  <span class="rank-number">90</span>
+  <img src="./61.jpg" alt="漂浮于太空的教室" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">漂浮于太空的教室</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">一所高中连同体育馆被神秘传送到了深空，毕业典礼那天的所有人，必须学会在宇宙中生存并找到归途。</em><small class="block text-xs text-gray-400 mt-2">日本 · 剧集 · 2026</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-1876.html" class="rank-row movie-card" data-title="洪德罗斯" data-region="美国" data-type="电影" data-year="2026" data-tags="战地摄影,真实事件,反战,牺牲,战争,传记,美国,电影" data-genre="战争，传记">
+  <span class="rank-number">91</span>
+  <img src="./76.jpg" alt="洪德罗斯" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">洪德罗斯</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">传奇战地摄影师洪德罗斯的传记片，记录他穿梭于全球最危险战场，最后倒在利比亚炮火中的一生。</em><small class="block text-xs text-gray-400 mt-2">美国 · 电影 · 2026</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-1997.html" class="rank-row movie-card" data-title="黑鹰坠落：死里逃生" data-region="美国" data-type="电影" data-year="2026" data-tags="真实改编,索马里行动,士兵视角,战场求生,硬核战争,战争,动作,历史,美国,电影" data-genre="战争 / 动作 / 历史">
+  <span class="rank-number">92</span>
+  <img src="./47.jpg" alt="黑鹰坠落：死里逃生" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">黑鹰坠落：死里逃生</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">1993年摩加迪沙，一名坠机黑鹰飞行员在民兵包围中独自求生30小时。</em><small class="block text-xs text-gray-400 mt-2">美国 · 电影 · 2026</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0006.html" class="rank-row movie-card" data-title="圆盘皇女 十二月夜想曲" data-region="日本" data-type="OVA" data-year="2025" data-tags="外星公主,钢琴,冬夜,记忆删除,古典乐,奇幻,爱情,音乐,日本,OVA" data-genre="奇幻 / 爱情 / 音乐">
+  <span class="rank-number">93</span>
+  <img src="./6.jpg" alt="圆盘皇女 十二月夜想曲" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">圆盘皇女 十二月夜想曲</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">失忆的外星皇女流落地球琴房，她弹的《夜想曲》能让听者看到“最爱之人的死亡瞬间”。</em><small class="block text-xs text-gray-400 mt-2">日本 · OVA · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0008.html" class="rank-row movie-card" data-title="转运姐妹花" data-region="中国大陆" data-type="电影" data-year="2025" data-tags="姐妹情,运气交换,爽感,喜剧,奇幻,中国大陆,电影" data-genre="喜剧、奇幻">
+  <span class="rank-number">94</span>
+  <img src="./8.jpg" alt="转运姐妹花" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">转运姐妹花</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">霉运缠身的妹妹与人生赢家姐姐意外交换了运气，却发现对方的灾难才刚刚开始。</em><small class="block text-xs text-gray-400 mt-2">中国大陆 · 电影 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0024.html" class="rank-row movie-card" data-title="斗罗大陆之燃魂战" data-region="中国" data-type="电影" data-year="2025" data-tags="热血,武魂,团战,特效大片,改编,动作,奇幻,中国,电影" data-genre="动作 / 奇幻">
+  <span class="rank-number">95</span>
+  <img src="./24.jpg" alt="斗罗大陆之燃魂战" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">斗罗大陆之燃魂战</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">史莱克七怪在全大陆高级魂师学院精英大赛决赛中，遭遇武魂殿的阴谋围剿，全员陷入绝境。</em><small class="block text-xs text-gray-400 mt-2">中国 · 电影 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0029.html" class="rank-row movie-card" data-title="珍妮花的欲望续集" data-region="美国" data-type="电影" data-year="2025" data-tags="致命女人,替身,复仇,反转再反转,悬疑,惊悚,犯罪,美国,电影" data-genre="悬疑，惊悚，犯罪">
+  <span class="rank-number">96</span>
+  <img src="./29.jpg" alt="珍妮花的欲望续集" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">珍妮花的欲望续集</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">上一部的胜利者被更危险的模仿犯盯上，对方不只是要她的命，而是要取代她的人生。</em><small class="block text-xs text-gray-400 mt-2">美国 · 电影 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0034.html" class="rank-row movie-card" data-title="小生护驾" data-region="中国香港" data-type="电影" data-year="2025" data-tags="保镖,女明星,乌龙,粤语残片,怀旧,喜剧,动作,爱情,中国香港,电影" data-genre="喜剧、动作、爱情">
+  <span class="rank-number">97</span>
+  <img src="./34.jpg" alt="小生护驾" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">小生护驾</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">过气武打明星被富豪聘为女儿的保镖，却发现要保护的是三个疯疯癫癫的up主闺蜜。</em><small class="block text-xs text-gray-400 mt-2">中国香港 · 电影 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0039.html" class="rank-row movie-card" data-title="王老虎抢亲粤语" data-region="中国香港" data-type="剧集" data-year="2025" data-tags="粤语,女扮男装,抢亲,欢喜冤家,古装,喜剧,爱情,中国香港,剧集" data-genre="古装 / 喜剧 / 爱情">
+  <span class="rank-number">98</span>
+  <img src="./39.jpg" alt="王老虎抢亲粤语" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">王老虎抢亲粤语</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">女山大王抢了文弱书生做压寨丈夫，结果发现书生是朝廷密探，山贼窝是官府钓鱼执法点。</em><small class="block text-xs text-gray-400 mt-2">中国香港 · 剧集 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0062.html" class="rank-row movie-card" data-title="今夜我要控制你的尸首" data-region="泰国" data-type="电影" data-year="2025" data-tags="通灵,尸体,复仇,巫术,搞笑恐怖,恐怖,黑色喜剧,奇幻,泰国,电影" data-genre="恐怖 / 黑色喜剧 / 奇幻">
+  <span class="rank-number">99</span>
+  <img src="./62.jpg" alt="今夜我要控制你的尸首" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">今夜我要控制你的尸首</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">一名蹩脚的降头师受雇控制一具女尸跳舞，却意外发现女尸在夜店里自己站了起来，还点了杯威士忌。</em><small class="block text-xs text-gray-400 mt-2">泰国 · 电影 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0083.html" class="rank-row movie-card" data-title="性爱年华" data-region="西班牙" data-type="剧集" data-year="2025" data-tags="性探索,中年危机,开放式关系,成长,幽默,剧情,喜剧,爱情,西班牙,剧集" data-genre="剧情 / 喜剧 / 爱情">
+  <span class="rank-number">100</span>
+  <img src="./83.jpg" alt="性爱年华" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">性爱年华</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">一对结婚20年的夫妻决定各自由探索性幻想，却发现最令人兴奋的“偷情对象”还是彼此。</em><small class="block text-xs text-gray-400 mt-2">西班牙 · 剧集 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0088.html" class="rank-row movie-card" data-title="新冷血十三鹰" data-region="中国香港" data-type="电影" data-year="2025" data-tags="翻拍,雇佣杀手,兄弟情,背叛,动作,武侠,犯罪,中国香港,电影" data-genre="动作，武侠，犯罪">
+  <span class="rank-number">101</span>
+  <img src="./88.jpg" alt="新冷血十三鹰" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">新冷血十三鹰</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">十三名孤儿被养大成为顶级杀手，代号鹰群。当老大发现自己就是下一个目标时，他决定屠鹰。</em><small class="block text-xs text-gray-400 mt-2">中国香港 · 电影 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0095.html" class="rank-row movie-card" data-title="给小酒馆女子喝高杯酒" data-region="日本" data-type="电影" data-year="2025" data-tags="酒馆,调酒,女性,深夜剧,治愈美食,日本,电影" data-genre="治愈美食">
+  <span class="rank-number">102</span>
+  <img src="./95.jpg" alt="给小酒馆女子喝高杯酒" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">给小酒馆女子喝高杯酒</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">一家只在深夜开门的小酒馆，女主调酒师用一杯酒治愈每位心事重重的女客。</em><small class="block text-xs text-gray-400 mt-2">日本 · 电影 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0116.html" class="rank-row movie-card" data-title="超人：红色之子" data-region="美国" data-type="电影 / 动画" data-year="2025" data-tags="超人降落在苏联,乌托邦与反乌托邦,道德困境,科幻,超级英雄,政治惊悚,美国,电影 / 动画" data-genre="科幻, 超级英雄, 政治惊悚">
+  <span class="rank-number">103</span>
+  <img src="./116.jpg" alt="超人：红色之子" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">超人：红色之子</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">超人没有降落在堪萨斯，而是降落在乌克兰集体农庄，他成为苏联的终极武器，用绝对力量实现了全球共产主义——也带来了绝对的监视与沉默。</em><small class="block text-xs text-gray-400 mt-2">美国 · 电影 / 动画 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0123.html" class="rank-row movie-card" data-title="行方不明" data-region="日本" data-type="电影" data-year="2025" data-tags="失踪,寻亲,身份,记忆,悬疑,家庭,心理,日本,电影" data-genre="悬疑，家庭，心理">
+  <span class="rank-number">104</span>
+  <img src="./123.jpg" alt="行方不明" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">行方不明</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">失踪七年的女儿突然回家，DNA、指纹全部对得上，但母亲斩钉截铁地说：她不是我女儿。</em><small class="block text-xs text-gray-400 mt-2">日本 · 电影 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0133.html" class="rank-row movie-card" data-title="杨门少年" data-region="中国大陆" data-type="剧集" data-year="2025" data-tags="青春,热血,家族,战争,古装,动作,中国大陆,剧集" data-genre="古装, 动作">
+  <span class="rank-number">105</span>
+  <img src="./133.jpg" alt="杨门少年" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">杨门少年</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">佘太君少女时代改名换姓，考入杨家的“少年军武学堂”，与杨业成为同窗对手。</em><small class="block text-xs text-gray-400 mt-2">中国大陆 · 剧集 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0154.html" class="rank-row movie-card" data-title="寻找克洛托" data-region="法国" data-type="电影" data-year="2025" data-tags="命运之线,蝴蝶效应,时光倒流,科幻,剧情,冒险,法国,电影" data-genre="科幻, 剧情, 冒险">
+  <span class="rank-number">106</span>
+  <img src="./4.jpg" alt="寻找克洛托" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">寻找克洛托</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">为了复活在车祸中丧生的妻子，物理学家发明了能看见“命运之线”的眼镜，却发现妻子的死正是未来的自己一手策划。</em><small class="block text-xs text-gray-400 mt-2">法国 · 电影 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0174.html" class="rank-row movie-card" data-title="青幽渡" data-region="中国大陆" data-type="剧集" data-year="2025" data-tags="渡魂人,人鬼情未了,单元剧,中式美学,古装,奇幻,爱情,中国大陆,剧集" data-genre="古装 / 奇幻 / 爱情">
+  <span class="rank-number">107</span>
+  <img src="./24.jpg" alt="青幽渡" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">青幽渡</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">永远十九岁的渡魂人青灵，需引渡九百九十九个亡魂才能入轮回，而她的第一千个目标，竟是前世害死她的恋人。</em><small class="block text-xs text-gray-400 mt-2">中国大陆 · 剧集 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0175.html" class="rank-row movie-card" data-title="它在黑夜到访" data-region="美国" data-type="电影" data-year="2025" data-tags="怪物,家庭,末日,密室,心理,恐怖,惊悚,美国,电影" data-genre="恐怖，惊悚">
+  <span class="rank-number">108</span>
+  <img src="./25.jpg" alt="它在黑夜到访" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">它在黑夜到访</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">深夜敲门声响起，门外说“让我进去”，但你不知道那是人还是它。</em><small class="block text-xs text-gray-400 mt-2">美国 · 电影 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0185.html" class="rank-row movie-card" data-title="好小子，好功夫" data-region="中国大陆" data-type="电影" data-year="2025" data-tags="萌娃,武术,乌龙,特工,喜剧,动作,家庭,中国大陆,电影" data-genre="喜剧，动作，家庭">
+  <span class="rank-number">109</span>
+  <img src="./35.jpg" alt="好小子，好功夫" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">好小子，好功夫</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">为了破坏反派窃取国家机密，一个功夫了得的小学生联合迷糊女特工，上演了一场欢乐乌龙大戏。</em><small class="block text-xs text-gray-400 mt-2">中国大陆 · 电影 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0192.html" class="rank-row movie-card" data-title="7天之前" data-region="中国台湾" data-type="电影" data-year="2025" data-tags="时间循环,失忆,倒计时,科幻,爱情,中国台湾,电影" data-genre="科幻 / 爱情">
+  <span class="rank-number">110</span>
+  <img src="./42.jpg" alt="7天之前" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">7天之前</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">她失去了过去7天的记忆，而他发现，他们必须在7天内相爱，否则世界将崩塌。</em><small class="block text-xs text-gray-400 mt-2">中国台湾 · 电影 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0223.html" class="rank-row movie-card" data-title="人鱼小姐" data-region="韩国" data-type="剧集" data-year="2025" data-tags="人鱼,都市恋曲,身份秘密,治愈,奇幻爱情,韩国,剧集" data-genre="奇幻爱情">
+  <span class="rank-number">111</span>
+  <img src="./73.jpg" alt="人鱼小姐" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">人鱼小姐</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">当一条被困在都市水族馆里的人鱼公主，遇到了一个患有人鱼恐惧症的海洋学家。</em><small class="block text-xs text-gray-400 mt-2">韩国 · 剧集 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0241.html" class="rank-row movie-card" data-title="多年后的全家福" data-region="中国大陆" data-type="电影" data-year="2025" data-tags="全家福,离散,重逢,东北,时间,剧情,家庭,中国大陆,电影" data-genre="剧情 / 家庭">
+  <span class="rank-number">112</span>
+  <img src="./91.jpg" alt="多年后的全家福" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">多年后的全家福</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">一张 1999 年的全家福被重新翻出，四散在各地的三兄妹决定回到东北老家，补拍一张 25 年后的全家福。</em><small class="block text-xs text-gray-400 mt-2">中国大陆 · 电影 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0259.html" class="rank-row movie-card" data-title="犹太狮子" data-region="美国" data-type="电影" data-year="2025" data-tags="二战,犹太,复仇,真实改编,抗争,历史剧情,美国,电影" data-genre="历史剧情">
+  <span class="rank-number">113</span>
+  <img src="./109.jpg" alt="犹太狮子" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">犹太狮子</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">二战期间，一群幸存的犹太拳击手组建秘密地下抵抗组织，在纳粹眼皮底下展开了一场又一场暗杀。</em><small class="block text-xs text-gray-400 mt-2">美国 · 电影 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0261.html" class="rank-row movie-card" data-title="机器人与法兰克" data-region="法国" data-type="电影" data-year="2025" data-tags="老年痴呆,陪伴机器人,美食,科幻,家庭,喜剧,法国,电影" data-genre="科幻 / 家庭 / 喜剧">
+  <span class="rank-number">114</span>
+  <img src="./111.jpg" alt="机器人与法兰克" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">机器人与法兰克</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">一个患有阿尔茨海默症的倔老头，教他的家政机器人如何偷邻居家的祖传香料配方。</em><small class="block text-xs text-gray-400 mt-2">法国 · 电影 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0264.html" class="rank-row movie-card" data-title="回到荒野" data-region="英国 / 美国" data-type="电影" data-year="2025" data-tags="野外求生,父子,狼孩,自然主义,治愈,冒险,家庭,英国 / 美国,电影" data-genre="冒险 / 家庭">
+  <span class="rank-number">115</span>
+  <img src="./114.jpg" alt="回到荒野" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">回到荒野</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">华尔街精英带着他在都市里养出焦虑症的儿子，去他曾长大的荒野进行“脱敏治疗”，却双双被狼群困住，而狼群的首领认识他。</em><small class="block text-xs text-gray-400 mt-2">英国 / 美国 · 电影 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0271.html" class="rank-row movie-card" data-title="鬼宅" data-region="日本" data-type="电影" data-year="2025" data-tags="凶宅,直播,诅咒,母女,恐怖,日本,电影" data-genre="恐怖">
+  <span class="rank-number">116</span>
+  <img src="./121.jpg" alt="鬼宅" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">鬼宅</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">灵异主播为流量住进凶宅，却发现恐怖的不是鬼，而是这栋房子会轮流附身每一个家庭成员。</em><small class="block text-xs text-gray-400 mt-2">日本 · 电影 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0284.html" class="rank-row movie-card" data-title="娃娃脸" data-region="美国" data-type="电视剧" data-year="2025" data-tags="返老还童,硅谷阴谋,意识上传,悬疑,科幻,美国,电视剧" data-genre="悬疑, 科幻">
+  <span class="rank-number">117</span>
+  <img src="./134.jpg" alt="娃娃脸" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">娃娃脸</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">38岁的女程序员被公司强制注射“青春针”，身体回到8岁，但脑子里的代码病毒开始在儿童体内成人意识中蔓延。</em><small class="block text-xs text-gray-400 mt-2">美国 · 电视剧 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0297.html" class="rank-row movie-card" data-title="降妖伏魔之定海神针" data-region="中国大陆" data-type="电影" data-year="2025" data-tags="西游记衍生,孙悟空,法宝,喜剧,视觉特效,奇幻,动作,神话,中国大陆,电影" data-genre="奇幻 / 动作 / 神话">
+  <span class="rank-number">118</span>
+  <img src="./147.jpg" alt="降妖伏魔之定海神针" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">降妖伏魔之定海神针</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">金箍棒被盗，孙悟空失去法力，却意外发现偷棒者是自己五百年前的救命恩人。</em><small class="block text-xs text-gray-400 mt-2">中国大陆 · 电影 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0310.html" class="rank-row movie-card" data-title="信任之危 第二季" data-region="英国" data-type="剧集" data-year="2025" data-tags="高智商,权力游戏,现代谍战,口碑剧,悬疑,惊悚,政治,英国,剧集" data-genre="悬疑 / 惊悚 / 政治">
+  <span class="rank-number">119</span>
+  <img src="./10.jpg" alt="信任之危 第二季" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">信任之危 第二季</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">第一季的叛徒死了，但留下来的那份加密名单，让每一对新盟友都成了潜在的敌人。</em><small class="block text-xs text-gray-400 mt-2">英国 · 剧集 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0318.html" class="rank-row movie-card" data-title="西部战线" data-region="韩国" data-type="电影" data-year="2025" data-tags="朝鲜战争,南北兄弟,敌后求生,人性微光,战争,剧情,历史,韩国,电影" data-genre="战争、剧情、历史">
+  <span class="rank-number">120</span>
+  <img src="./18.jpg" alt="西部战线" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">西部战线</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">朝鲜战争末期，一名南朝韩补给兵和一名朝鲜人民军逃兵在西部战线的废墟中，被迫共用同一本求生手册活下去。</em><small class="block text-xs text-gray-400 mt-2">韩国 · 电影 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0323.html" class="rank-row movie-card" data-title="时光教会我爱你第二季" data-region="中国大陆" data-type="网剧" data-year="2025" data-tags="时间回溯,错位婚姻,追妻火葬场,成长,爱情,奇幻,剧情,中国大陆,网剧" data-genre="爱情, 奇幻, 剧情">
+  <span class="rank-number">121</span>
+  <img src="./23.jpg" alt="时光教会我爱你第二季" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">时光教会我爱你第二季</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">重启时间线后，霸道总裁发现自己重置了婚姻，而这次轮到妻子拥有了全部记忆。</em><small class="block text-xs text-gray-400 mt-2">中国大陆 · 网剧 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0338.html" class="rank-row movie-card" data-title="雌雄十大寇" data-region="中国香港" data-type="电影" data-year="2025" data-tags="雌雄大盗,港式警匪,侠盗义贼,动作,犯罪,喜剧,中国香港,电影" data-genre="动作 / 犯罪 / 喜剧">
+  <span class="rank-number">122</span>
+  <img src="./38.jpg" alt="雌雄十大寇" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">雌雄十大寇</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">香港警方通缉榜上并列第一的雌雄大盗，一边亡命天涯一边替天行道，顺便谈着不要命的恋爱。</em><small class="block text-xs text-gray-400 mt-2">中国香港 · 电影 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0343.html" class="rank-row movie-card" data-title="精子捐献者" data-region="印度" data-type="电影" data-year="2025" data-tags="生殖健康,伦理,家庭压力,宝莱坞,社会喜剧,印度,电影" data-genre="社会喜剧">
+  <span class="rank-number">123</span>
+  <img src="./43.jpg" alt="精子捐献者" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">精子捐献者</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">为了还清母亲的手术费，一个保守小镇的纯情处男偷偷去精子银行“撸一管”，却发现自己成了全城争抢的“学霸金种”。</em><small class="block text-xs text-gray-400 mt-2">印度 · 电影 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0363.html" class="rank-row movie-card" data-title="代号火箭炮" data-region="俄罗斯" data-type="电影" data-year="2025" data-tags="二战,喀秋莎,女兵,复仇,战争,动作,历史,俄罗斯,电影" data-genre="战争, 动作, 历史">
+  <span class="rank-number">124</span>
+  <img src="./63.jpg" alt="代号火箭炮" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">代号火箭炮</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">一群被德军屠杀村庄的幸存女性，偷了一辆“喀秋莎”火箭炮车，独自向敌后开火。</em><small class="block text-xs text-gray-400 mt-2">俄罗斯 · 电影 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0371.html" class="rank-row movie-card" data-title="请让一让" data-region="中国大陆" data-type="电影" data-year="2025" data-tags="地铁,社交恐惧,逆袭,职场,荒诞,都市喜剧,中国大陆,电影" data-genre="都市喜剧">
+  <span class="rank-number">125</span>
+  <img src="./71.jpg" alt="请让一让" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">请让一让</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">一个社恐程序员为了挤上早高峰地铁，被迫学会了一百种“人间蒸发”的技巧。</em><small class="block text-xs text-gray-400 mt-2">中国大陆 · 电影 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0389.html" class="rank-row movie-card" data-title="猫眼看人" data-region="中国" data-type="电影" data-year="2025" data-tags="猫,偷窥,换眼,复仇,都市传说,悬疑,惊悚,奇幻,中国,电影" data-genre="悬疑 / 惊悚 / 奇幻">
+  <span class="rank-number">126</span>
+  <img src="./89.jpg" alt="猫眼看人" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">猫眼看人</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">失明调音师移植了一双猫的眼球，从此他能看见人类背后的“鬼影”。</em><small class="block text-xs text-gray-400 mt-2">中国 · 电影 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0407.html" class="rank-row movie-card" data-title="冬天的骨头" data-region="中国大陆" data-type="电影" data-year="2025" data-tags="东北,雪,父女,黑吃黑,犯罪,悬疑,中国大陆,电影" data-genre="犯罪/悬疑/东北">
+  <span class="rank-number">127</span>
+  <img src="./107.jpg" alt="冬天的骨头" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">冬天的骨头</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">父亲卷走黑钱消失，女儿必须在冰封期结束前找到他，否则全家将被活埋。</em><small class="block text-xs text-gray-400 mt-2">中国大陆 · 电影 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0417.html" class="rank-row movie-card" data-title="集结风暴" data-region="美国" data-type="剧集" data-year="2025" data-tags="超级英雄,团队,灾难,异能,末日,科幻,动作,美国,剧集" data-genre="科幻 / 动作">
+  <span class="rank-number">128</span>
+  <img src="./117.jpg" alt="集结风暴" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">集结风暴</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">五名素不相识的异能者被一场诡异电磁风暴聚集，他们必须联手阻止世界崩塌。</em><small class="block text-xs text-gray-400 mt-2">美国 · 剧集 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0430.html" class="rank-row movie-card" data-title="女孩欲乐园" data-region="日本" data-type="电影" data-year="2025" data-tags="女性,欲望,成长,便利店,剧情,青春,日本,电影" data-genre="剧情/青春">
+  <span class="rank-number">129</span>
+  <img src="./130.jpg" alt="女孩欲乐园" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">女孩欲乐园</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">在24小时便利店打工的三个女孩，把收银台当成了探索成人世界的秘密基地。</em><small class="block text-xs text-gray-400 mt-2">日本 · 电影 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0432.html" class="rank-row movie-card" data-title="湮没之地" data-region="法国 / 德国" data-type="电影" data-year="2025" data-tags="末日,孤独,声音叙事,科幻,剧情,灾难,法国 / 德国,电影" data-genre="科幻 / 剧情 / 灾难">
+  <span class="rank-number">130</span>
+  <img src="./132.jpg" alt="湮没之地" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">湮没之地</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">一场电磁灾难抹去了地球上所有磁性记录介质，人类文明一夜回到口传时代。</em><small class="block text-xs text-gray-400 mt-2">法国 / 德国 · 电影 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0438.html" class="rank-row movie-card" data-title="特瑞萨的噩梦" data-region="西班牙" data-type="电影" data-year="2025" data-tags="噩梦,记忆碎片,宗教,反转,密室,恐怖,心理惊悚,西班牙,电影" data-genre="恐怖, 心理惊悚">
+  <span class="rank-number">131</span>
+  <img src="./138.jpg" alt="特瑞萨的噩梦" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">特瑞萨的噩梦</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">女作家特瑞萨每晚重复同一个噩梦，直到她在现实新闻中看到了梦里被杀的那个女人。</em><small class="block text-xs text-gray-400 mt-2">西班牙 · 电影 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0448.html" class="rank-row movie-card" data-title="吹响悠风号第三季" data-region="日本" data-type="动画剧集" data-year="2025" data-tags="吹奏乐,青春,社团,成长,音乐,校园,剧情,日本,动画剧集" data-genre="音乐 / 校园 / 剧情">
+  <span class="rank-number">132</span>
+  <img src="./148.jpg" alt="吹响悠风号第三季" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">吹响悠风号第三季</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">黄前久美子当上部长后，第一个任务是把一个不会读谱的天才长号手劝回社团。</em><small class="block text-xs text-gray-400 mt-2">日本 · 动画剧集 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0453.html" class="rank-row movie-card" data-title="极速恋人2" data-region="泰国" data-type="剧集" data-year="2025" data-tags="F1,赛车手,宿敌变情侣,泰国,爱情,运动,剧集" data-genre="爱情, 运动">
+  <span class="rank-number">133</span>
+  <img src="./3.jpg" alt="极速恋人2" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">极速恋人2</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">上一季的赛道宿敌本季被迫成为队友，在争夺总冠军的路上，他们的关系从碰撞走向融合。</em><small class="block text-xs text-gray-400 mt-2">泰国 · 剧集 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0458.html" class="rank-row movie-card" data-title="艾尔菲·霍普金斯" data-region="英国" data-type="电影" data-year="2025" data-tags="灯塔,守塔人,失踪,悬疑,奇幻,英国,电影" data-genre="悬疑, 奇幻">
+  <span class="rank-number">134</span>
+  <img src="./8.jpg" alt="艾尔菲·霍普金斯" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">艾尔菲·霍普金斯</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">1910年，一座偏远灯塔的守塔人日记记录：“第99天，海平面上升了一英寸，我怀疑是自己在下沉。”</em><small class="block text-xs text-gray-400 mt-2">英国 · 电影 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0463.html" class="rank-row movie-card" data-title="骑弹飞行" data-region="美国" data-type="电影" data-year="2025" data-tags="史蒂芬·金,hitchhiker,死亡,1960s,恐怖,奇幻,公路,美国,电影" data-genre="恐怖， 奇幻， 公路">
+  <span class="rank-number">135</span>
+  <img src="./13.jpg" alt="骑弹飞行" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">骑弹飞行</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">1969年，一个反战青年搭上了一辆由死人驾驶的顺风车，只有讲出最恐怖的故事才能活到天亮。</em><small class="block text-xs text-gray-400 mt-2">美国 · 电影 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0466.html" class="rank-row movie-card" data-title="点金者" data-region="中国" data-type="剧集" data-year="2025" data-tags="期货,金融犯罪,高智商,复仇,悬疑,商战,中国,剧集" data-genre="悬疑, 商战">
+  <span class="rank-number">136</span>
+  <img src="./16.jpg" alt="点金者" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">点金者</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">被陷害入狱的天才操盘手出狱后化身外卖员，潜伏进仇人的公司，用一顿饭的功夫搅动百亿股市。</em><small class="block text-xs text-gray-400 mt-2">中国 · 剧集 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0476.html" class="rank-row movie-card" data-title="权力的游戏第四季" data-region="美国" data-type="电视剧" data-year="2025" data-tags="史诗,多线叙事,权力斗争,龙,叛变,剧情,奇幻,战争,美国,电视剧" data-genre="剧情 / 奇幻 / 战争">
+  <span class="rank-number">137</span>
+  <img src="./26.jpg" alt="权力的游戏第四季" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">权力的游戏第四季</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">七国混战加剧，龙母解放奴隶，长城之外夜王集结大军，所有人的命运在此转折。</em><small class="block text-xs text-gray-400 mt-2">美国 · 电视剧 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0479.html" class="rank-row movie-card" data-title="黑暗军团" data-region="美国" data-type="电影" data-year="2025" data-tags="秘密组织,基因改造,反乌托邦,近未来,小分队作战,动作,科幻,惊悚,美国,电影" data-genre="动作 / 科幻 / 惊悚">
+  <span class="rank-number">138</span>
+  <img src="./29.jpg" alt="黑暗军团" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">黑暗军团</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">退役特种兵被征召进一个名为“黑暗军团”的秘密部队，却发现他们要消灭的怪物，全是军团的失败试验品。</em><small class="block text-xs text-gray-400 mt-2">美国 · 电影 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0499.html" class="rank-row movie-card" data-title="美国心" data-region="美国" data-type="剧集" data-year="2025" data-tags="移民家庭,横贯大陆,世纪变迁,剧情,历史,西部,美国,剧集" data-genre="剧情，历史，西部">
+  <span class="rank-number">139</span>
+  <img src="./49.jpg" alt="美国心" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">美国心</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">一个爱尔兰移民家庭参与了太平洋铁路修建，四代人的命运从此与这片土地的疤痕绑定。</em><small class="block text-xs text-gray-400 mt-2">美国 · 剧集 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0507.html" class="rank-row movie-card" data-title="铁男：21世纪极速版" data-region="日本" data-type="电影" data-year="2025" data-tags="身体恐怖,赛博朋克,cult,金属,科幻,恐怖,实验,日本,电影" data-genre="科幻 / 恐怖 / 实验">
+  <span class="rank-number">140</span>
+  <img src="./57.jpg" alt="铁男：21世纪极速版" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">铁男：21世纪极速版</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">一名社畜在地铁上被神秘电流击中，身体开始不可控地长出铁锈、螺栓，甚至与列车融为一体。</em><small class="block text-xs text-gray-400 mt-2">日本 · 电影 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0530.html" class="rank-row movie-card" data-title="致命魔术国语" data-region="中国大陆" data-type="电影" data-year="2025" data-tags="魔术,复仇,国语配音,反转,悬疑,犯罪,剧情,中国大陆,电影" data-genre="悬疑 / 犯罪 / 剧情">
+  <span class="rank-number">141</span>
+  <img src="./80.jpg" alt="致命魔术国语" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">致命魔术国语</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">一场魔术表演中，助手意外身亡。十年后，当年的魔术师收到一张门票，上面写着“该你了”。</em><small class="block text-xs text-gray-400 mt-2">中国大陆 · 电影 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0545.html" class="rank-row movie-card" data-title="以一当百执事" data-region="韩国" data-type="剧集" data-year="2025" data-tags="管家,财阀,契约,治愈,爱情,喜剧,韩国,剧集" data-genre="爱情, 喜剧">
+  <span class="rank-number">142</span>
+  <img src="./95.jpg" alt="以一当百执事" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">以一当百执事</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">经营一家“万能解决公司”的前特工，为了还债不得不给一位患有社交恐惧症的财阀千金当管家。</em><small class="block text-xs text-gray-400 mt-2">韩国 · 剧集 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0558.html" class="rank-row movie-card" data-title="米拉日巴" data-region="不丹" data-type="电影" data-year="2025" data-tags="藏传佛教,苦修,雪山,救赎,传记,宗教,不丹,电影" data-genre="传记 / 宗教">
+  <span class="rank-number">143</span>
+  <img src="./108.jpg" alt="米拉日巴" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">米拉日巴</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">年轻的黑巫師米拉日巴为复仇而学法，却在雪山苦修中成为一代尊者，他的修行之路充满血与雪。</em><small class="block text-xs text-gray-400 mt-2">不丹 · 电影 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0568.html" class="rank-row movie-card" data-title="铁血战士：血兽进化" data-region="美国" data-type="电影" data-year="2025" data-tags="铁血战士,异形宇宙,血腥杀戮,暗黑进化,科幻,动作,恐怖,美国,电影" data-genre="科幻, 动作, 恐怖">
+  <span class="rank-number">144</span>
+  <img src="./118.jpg" alt="铁血战士：血兽进化" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">铁血战士：血兽进化</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">一种能吞噬铁血战士DNA并化为人形的血兽从外星监狱逃脱，人类特种部队被迫与铁血战士结成最不稳定的联盟。</em><small class="block text-xs text-gray-400 mt-2">美国 · 电影 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0594.html" class="rank-row movie-card" data-title="偷情小丈夫" data-region="中国香港" data-type="电影" data-year="2025" data-tags="身份错位,捉奸,荒诞,男人困境,喜剧,爱情,黑色幽默,中国香港,电影" data-genre="喜剧, 爱情, 黑色幽默">
+  <span class="rank-number">145</span>
+  <img src="./144.jpg" alt="偷情小丈夫" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">偷情小丈夫</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">全职爸爸为证明自己魅力网上撩妹，却“撩”到了假装陌生人的妻子，一场互飙演技的谎言大战就此爆发。</em><small class="block text-xs text-gray-400 mt-2">中国香港 · 电影 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0606.html" class="rank-row movie-card" data-title="披头士的诞生" data-region="英国" data-type="电影" data-year="2025" data-tags="1960s,摇滚,利物浦,音乐,传记,历史,英国,电影" data-genre="音乐, 传记, 历史">
+  <span class="rank-number">146</span>
+  <img src="./6.jpg" alt="披头士的诞生" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">披头士的诞生</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">在利物浦那个破旧的马修街地下室，五个失业青年用偷来的乐器，敲响了改变世界的第一个音符。</em><small class="block text-xs text-gray-400 mt-2">英国 · 电影 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0614.html" class="rank-row movie-card" data-title="闪电约会" data-region="中国" data-type="电影" data-year="2025" data-tags="时间循环,速配,社恐,笑泪并存,喜剧,爱情,奇幻,中国,电影" data-genre="喜剧、爱情、奇幻">
+  <span class="rank-number">147</span>
+  <img src="./14.jpg" alt="闪电约会" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">闪电约会</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">重度社恐在四分钟闪电约会中陷入时间循环，必须吻错一百个人才能逃出生天。</em><small class="block text-xs text-gray-400 mt-2">中国 · 电影 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0619.html" class="rank-row movie-card" data-title="关键目击" data-region="美国" data-type="电影" data-year="2025" data-tags="盲人,证词,反转,心理博弈,声效叙事,犯罪,悬疑,美国,电影" data-genre="犯罪，悬疑">
+  <span class="rank-number">148</span>
+  <img src="./19.jpg" alt="关键目击" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">关键目击</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">唯一的目击证人是个盲人，他“看见”的真相，藏在录音笔里。</em><small class="block text-xs text-gray-400 mt-2">美国 · 电影 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0634.html" class="rank-row movie-card" data-title="船儿漂流梦遗恨" data-region="中国大陆" data-type="电影" data-year="2025" data-tags="长江,船民,失忆,旧梦,时代变迁,文艺,剧情,中国大陆,电影" data-genre="文艺，剧情">
+  <span class="rank-number">149</span>
+  <img src="./34.jpg" alt="船儿漂流梦遗恨" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">船儿漂流梦遗恨</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">失忆的老船夫驾着一艘破船逆流而上，只为找回遗落在三峡旧梦中的一个承诺。</em><small class="block text-xs text-gray-400 mt-2">中国大陆 · 电影 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0635.html" class="rank-row movie-card" data-title="不眠 第二季" data-region="英国" data-type="剧集" data-year="2025" data-tags="核潜艇,连环死亡,军情五处,政治阴谋,悬疑,惊悚,政治,英国,剧集" data-genre="悬疑 / 惊悚 / 政治">
+  <span class="rank-number">150</span>
+  <img src="./35.jpg" alt="不眠 第二季" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">不眠 第二季</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">上一季的幸存警探艾米被秘密调入空军一号专案组，而总统的专机正在万米高空失控盘旋。</em><small class="block text-xs text-gray-400 mt-2">英国 · 剧集 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0655.html" class="rank-row movie-card" data-title="圣女小德兰" data-region="法国" data-type="电影" data-year="2025" data-tags="修道院,信仰,苦难,圣徒,内心戏,剧情,传记,宗教,法国,电影" data-genre="剧情, 传记, 宗教">
+  <span class="rank-number">151</span>
+  <img src="./55.jpg" alt="圣女小德兰" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">圣女小德兰</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">天赋极高的歌剧女高音为了“听见上帝”进入最严苛的修道院，却发现自己再也发不出声音。</em><small class="block text-xs text-gray-400 mt-2">法国 · 电影 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0662.html" class="rank-row movie-card" data-title="战争机器" data-region="美国" data-type="电影" data-year="2025" data-tags="机甲,人工智能,失控,反战,科幻,动作,美国,电影" data-genre="科幻 / 动作">
+  <span class="rank-number">152</span>
+  <img src="./62.jpg" alt="战争机器" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">战争机器</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">美军最先进的AI战争机器在测试中叛变，而它的操控者是一个从没上过战场的游戏宅。</em><small class="block text-xs text-gray-400 mt-2">美国 · 电影 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0670.html" class="rank-row movie-card" data-title="卢浮魅影" data-region="法国" data-type="电影" data-year="2025" data-tags="卢浮宫,艺术诅咒,夜巡,法国超自然,悬疑,奇幻,恐怖,法国,电影" data-genre="悬疑 / 奇幻 / 恐怖">
+  <span class="rank-number">153</span>
+  <img src="./70.jpg" alt="卢浮魅影" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">卢浮魅影</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">卢浮宫闭馆后的“夜巡”活动中，三名游客发现展厅里的画中人正在改变姿势。</em><small class="block text-xs text-gray-400 mt-2">法国 · 电影 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0673.html" class="rank-row movie-card" data-title="傲骨之战第三季" data-region="美国" data-type="剧集" data-year="2025" data-tags="女律师,政治,金融诈骗,老年觉醒,剧情,律政,美国,剧集" data-genre="剧情, 律政">
+  <span class="rank-number">154</span>
+  <img src="./73.jpg" alt="傲骨之战第三季" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">傲骨之战第三季</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">第三季中，律所被黑客攻击全员裸奔，戴安决定竞选法官，而玛雅在监狱里发现了新的赚钱门路。</em><small class="block text-xs text-gray-400 mt-2">美国 · 剧集 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0675.html" class="rank-row movie-card" data-title="小镇疑云 第二季" data-region="英国" data-type="剧集" data-year="2025" data-tags="英式冷峻,连环失踪,媒体审判,信仰崩塌,悬疑,犯罪,剧情,英国,剧集" data-genre="悬疑 / 犯罪 / 剧情">
+  <span class="rank-number">155</span>
+  <img src="./75.jpg" alt="小镇疑云 第二季" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">小镇疑云 第二季</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">第一季的凶手伏法三年后，小镇再度出现少女失踪案，而这次所有证据都指向第一季中被误判而自杀的“凶手”的遗孀，她正在策划一场完美的复仇。</em><small class="block text-xs text-gray-400 mt-2">英国 · 剧集 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0680.html" class="rank-row movie-card" data-title="放牛班的提琴手" data-region="法国" data-type="电影" data-year="2025" data-tags="教育,治愈,古典乐,问题少年,音乐,剧情,法国,电影" data-genre="音乐, 剧情">
+  <span class="rank-number">156</span>
+  <img src="./80.jpg" alt="放牛班的提琴手" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">放牛班的提琴手</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">一位失意的小提琴家去少管所代课，发现犯人们的噪音里藏着一个天才和弦。</em><small class="block text-xs text-gray-400 mt-2">法国 · 电影 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0683.html" class="rank-row movie-card" data-title="为朋友而拍的电影" data-region="日本" data-type="电影" data-year="2025" data-tags="友情,电影,告别,剧情,青春,日本" data-genre="剧情,青春">
+  <span class="rank-number">157</span>
+  <img src="./83.jpg" alt="为朋友而拍的电影" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">为朋友而拍的电影</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">五个少年在毕业前一天决定拍一部电影送给患绝症的朋友，而剧本最后一页写着“拍完这部戏，我们就绝交”。</em><small class="block text-xs text-gray-400 mt-2">日本 · 电影 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0693.html" class="rank-row movie-card" data-title="简易车站" data-region="日本" data-type="电影" data-year="2025" data-tags="治愈,离别,乡村,人生感悟,剧情,家庭,日本,电影" data-genre="剧情， 家庭">
+  <span class="rank-number">158</span>
+  <img src="./93.jpg" alt="简易车站" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">简易车站</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">废弃车站的最后一天，等车的乘客们意外发现彼此的人生在此交汇。</em><small class="block text-xs text-gray-400 mt-2">日本 · 电影 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0696.html" class="rank-row movie-card" data-title="神探" data-region="中国香港" data-type="电影" data-year="2025" data-tags="高智商犯罪,警匪对决,心理战,反转,悬疑,犯罪,剧情,中国香港,电影" data-genre="悬疑, 犯罪, 剧情">
+  <span class="rank-number">159</span>
+  <img src="./96.jpg" alt="神探" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">神探</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">被誉为“人肉测谎仪”的神探接手一桩完美谋杀案，却发现凶手正在模仿他的破案逻辑来陷害他。</em><small class="block text-xs text-gray-400 mt-2">中国香港 · 电影 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0698.html" class="rank-row movie-card" data-title="总统的生日蛋糕" data-region="法国" data-type="电影" data-year="2025" data-tags="荒诞,甜点,权力,小人物,喜剧,政治,法国,电影" data-genre="喜剧/政治">
+  <span class="rank-number">160</span>
+  <img src="./98.jpg" alt="总统的生日蛋糕" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">总统的生日蛋糕</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">一个乡下甜点师被错认成国宴主厨，为总统制作生日蛋糕，却误将强力泻药当糖粉。</em><small class="block text-xs text-gray-400 mt-2">法国 · 电影 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0701.html" class="rank-row movie-card" data-title="我的燃情岁月" data-region="中国大陆" data-type="剧集" data-year="2025" data-tags="九十年代,国企改革,青春热血,乐队,年代青春,中国大陆,剧集" data-genre="年代青春">
+  <span class="rank-number">161</span>
+  <img src="./101.jpg" alt="我的燃情岁月" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">我的燃情岁月</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">1998年，东北老工业区，五个工厂子弟用摇滚乐对抗下岗潮和注定的离别。</em><small class="block text-xs text-gray-400 mt-2">中国大陆 · 剧集 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0724.html" class="rank-row movie-card" data-title="初恋是榴莲先生" data-region="泰国" data-type="剧集" data-year="2025" data-tags="榴莲,甜宠,反差萌,美食,爱情,喜剧,青春,泰国,剧集" data-genre="爱情，喜剧，青春">
+  <span class="rank-number">162</span>
+  <img src="./124.jpg" alt="初恋是榴莲先生" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">初恋是榴莲先生</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">一个闻到榴莲就晕倒的富家千金，偏偏爱上了全泰国最著名的榴莲园少主，而她的过敏其实是装的。</em><small class="block text-xs text-gray-400 mt-2">泰国 · 剧集 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0727.html" class="rank-row movie-card" data-title="爱情上上签" data-region="中国" data-type="剧集" data-year="2025" data-tags="寺庙,好运,逆袭,甜宠,搞笑,爱情,喜剧,奇幻,中国,剧集" data-genre="爱情 / 喜剧 / 奇幻">
+  <span class="rank-number">163</span>
+  <img src="./127.jpg" alt="爱情上上签" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">爱情上上签</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">社畜在寺庙求了一支“上上签”后突然好运爆棚，但每次好运都会让她的暧昧对象倒大霉。</em><small class="block text-xs text-gray-400 mt-2">中国 · 剧集 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0767.html" class="rank-row movie-card" data-title="朗吉先生的罪行" data-region="法国" data-type="电影" data-year="2025" data-tags="文学教授,弑父,乡间别墅,庭审,剧情,犯罪,法国,电影" data-genre="剧情, 犯罪">
+  <span class="rank-number">164</span>
+  <img src="./17.jpg" alt="朗吉先生的罪行" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">朗吉先生的罪行</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">退休文学教授朗吉承认杀死亲弟弟，却在庭审现场将罪行演绎成一部致敬福克纳的行为艺术。</em><small class="block text-xs text-gray-400 mt-2">法国 · 电影 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0770.html" class="rank-row movie-card" data-title="超能疯人院" data-region="中国大陆" data-type="剧集" data-year="2025" data-tags="精神病,超能力,职场,沙雕,喜剧,科幻,中国大陆,剧集" data-genre="喜剧, 科幻">
+  <span class="rank-number">165</span>
+  <img src="./20.jpg" alt="超能疯人院" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">超能疯人院</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">新来的心理医生发现病人们不是疯了，而是能力太强被社会排斥，他决定组建一支“超能病友队”去参加电视台选秀。</em><small class="block text-xs text-gray-400 mt-2">中国大陆 · 剧集 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0775.html" class="rank-row movie-card" data-title="老炮儿" data-region="中国大陆" data-type="电影" data-year="2025" data-tags="江湖道义,父子情,城市变迁,剧情,动作,中国大陆,电影" data-genre="剧情 / 动作">
+  <span class="rank-number">166</span>
+  <img src="./25.jpg" alt="老炮儿" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">老炮儿</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">北京最后的顽主为救儿子重出江湖，却发现新时代的规矩是他再也看不懂的丛林。</em><small class="block text-xs text-gray-400 mt-2">中国大陆 · 电影 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0806.html" class="rank-row movie-card" data-title="火上女人" data-region="印度" data-type="电影" data-year="2025" data-tags="女性复仇,种姓制度,纵火,社会写实,暴力美学,剧情,惊悚,女性,印度,电影" data-genre="剧情 / 惊悚 / 女性">
+  <span class="rank-number">167</span>
+  <img src="./56.jpg" alt="火上女人" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">火上女人</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">一名低种姓寡妇成为连环纵火犯，她的目标是所有曾经“烧死”过她尊严的高种姓家庭。</em><small class="block text-xs text-gray-400 mt-2">印度 · 电影 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0808.html" class="rank-row movie-card" data-title="毬谣魔影" data-region="中国大陆" data-type="剧集" data-year="2025" data-tags="民国奇案,戏曲元素,本格推理,诅咒,悬疑,惊悚,中国大陆,剧集" data-genre="悬疑/惊悚">
+  <span class="rank-number">168</span>
+  <img src="./58.jpg" alt="毬谣魔影" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">毬谣魔影</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">当红京剧名伶在演《牡丹亭》时离奇猝死，此后每逢月圆，剧院便会响起无人能唱的《毬谣》，听到者必疯。</em><small class="block text-xs text-gray-400 mt-2">中国大陆 · 剧集 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0816.html" class="rank-row movie-card" data-title="小叮当与海盗仙子" data-region="美国" data-type="电影" data-year="2025" data-tags="精灵,海盗,友情,勇气,迪士尼风格,动画,奇幻,冒险,美国,电影" data-genre="动画 / 奇幻 / 冒险">
+  <span class="rank-number">169</span>
+  <img src="./66.jpg" alt="小叮当与海盗仙子" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">小叮当与海盗仙子</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">小叮当误闯梦幻岛海盗湾，与一个想成为“真正仙子”的人类女孩组队，对抗偷走精灵粉末的魔法海盗。</em><small class="block text-xs text-gray-400 mt-2">美国 · 电影 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0823.html" class="rank-row movie-card" data-title="秘境" data-region="中国大陆" data-type="电影" data-year="2025" data-tags="神秘洞穴,时空循环,民俗恐怖,绝境求生,冒险,奇幻,悬疑,中国大陆,电影" data-genre="冒险、奇幻、悬疑">
+  <span class="rank-number">170</span>
+  <img src="./73.jpg" alt="秘境" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">秘境</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">探险队进入云南原始森林的传说洞穴，发现里面困着不同年代的自杀未遂者。</em><small class="block text-xs text-gray-400 mt-2">中国大陆 · 电影 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0867.html" class="rank-row movie-card" data-title="午夜凶铃2：贞子缠身国语" data-region="日本" data-type="电影" data-year="2025" data-tags="诅咒扩散,语言变异,病毒式传播,国语配音,恐怖,日本,电影" data-genre="恐怖">
+  <span class="rank-number">171</span>
+  <img src="./117.jpg" alt="午夜凶铃2：贞子缠身国语" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">午夜凶铃2：贞子缠身国语</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">贞子的诅咒录像带被译制成国语版，病毒式传播速度翻了十倍。</em><small class="block text-xs text-gray-400 mt-2">日本 · 电影 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0893.html" class="rank-row movie-card" data-title="我，陪审团" data-region="美国" data-type="剧集" data-year="2025" data-tags="陪审团密室,全员嫌疑人,暴风雪山庄,模拟法庭,律政,悬疑,惊悚,美国,剧集" data-genre="律政， 悬疑， 惊悚">
+  <span class="rank-number">172</span>
+  <img src="./143.jpg" alt="我，陪审团" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">我，陪审团</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">12个陌生人被关进密室裁决一桩谋杀案，但诡异的是：死者就坐在陪审团中间。</em><small class="block text-xs text-gray-400 mt-2">美国 · 剧集 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0900.html" class="rank-row movie-card" data-title="猛虎嗅蔷薇" data-region="中国台湾" data-type="电影" data-year="2025" data-tags="黑帮,文艺,反差萌,救赎,犯罪,剧情,黑色幽默,中国台湾,电影" data-genre="犯罪、剧情、黑色幽默">
+  <span class="rank-number">173</span>
+  <img src="./150.jpg" alt="猛虎嗅蔷薇" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">猛虎嗅蔷薇</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">一个冷面杀手在执行最后一次任务时，不得不照料一盆濒死的蔷薇，却发现目标是自己的初恋。</em><small class="block text-xs text-gray-400 mt-2">中国台湾 · 电影 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0910.html" class="rank-row movie-card" data-title="禁爱嫌疑犯" data-region="中国大陆" data-type="电影" data-year="2025" data-tags="同志,冤案,九十年代,刑侦,悲剧,悬疑,爱情,犯罪,中国大陆,电影" data-genre="悬疑 / 爱情 / 犯罪">
+  <span class="rank-number">174</span>
+  <img src="./10.jpg" alt="禁爱嫌疑犯" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">禁爱嫌疑犯</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">1997 年，一名男工人被指控杀害女同事，唯一能证明他清白的是他无法公开承认的男友。</em><small class="block text-xs text-gray-400 mt-2">中国大陆 · 电影 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0918.html" class="rank-row movie-card" data-title="成为顶级明星的前一天" data-region="韩国" data-type="剧集" data-year="2025" data-tags="练习生,残酷现实,友情,催泪,倒计时,剧情,音乐,韩国,剧集" data-genre="剧情, 音乐">
+  <span class="rank-number">175</span>
+  <img src="./18.jpg" alt="成为顶级明星的前一天" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">成为顶级明星的前一天</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">距离顶流女团出道发布会只剩24小时，主唱却突然失踪，剩下的四名成员被迫面对不堪的过去。</em><small class="block text-xs text-gray-400 mt-2">韩国 · 剧集 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0923.html" class="rank-row movie-card" data-title="埃达尔和埃杰2" data-region="土耳其" data-type="剧集" data-year="2025" data-tags="兄弟情,宿命对决,史诗,奥斯曼背景,剧情,冒险,历史,土耳其,剧集" data-genre="剧情、冒险、历史">
+  <span class="rank-number">176</span>
+  <img src="./23.jpg" alt="埃达尔和埃杰2" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">埃达尔和埃杰2</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">兄弟二人被卷入一场横跨三大洲的阴谋，唯一的线索是父亲留下的半张羊皮卷。</em><small class="block text-xs text-gray-400 mt-2">土耳其 · 剧集 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0933.html" class="rank-row movie-card" data-title="金箍棒传奇2：沙僧的逆袭" data-region="中国大陆" data-type="电影" data-year="2025" data-tags="西游记衍生,沙僧主角,搞笑逆袭,职场隐喻,法宝大战,动画,喜剧,动作,中国大陆,电影" data-genre="动画 / 喜剧 / 动作">
+  <span class="rank-number">177</span>
+  <img src="./33.jpg" alt="金箍棒传奇2：沙僧的逆袭" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">金箍棒传奇2：沙僧的逆袭</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">沙和尚受够了挑行李和只会说“大师兄说得对”，这次他偷了金箍棒，要单挑整个天庭。</em><small class="block text-xs text-gray-400 mt-2">中国大陆 · 电影 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0941.html" class="rank-row movie-card" data-title="让爱飞翔" data-region="中国大陆" data-type="电影" data-year="2025" data-tags="乡村,滑翔伞,留守儿童,梦想,剧情,儿童,运动,中国大陆,电影" data-genre="剧情 / 儿童 / 运动">
+  <span class="rank-number">178</span>
+  <img src="./41.jpg" alt="让爱飞翔" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">让爱飞翔</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">贵州深山的留守儿童，用废铁和化肥袋造了一架滑翔伞，要飞出大山去找打工的父母。</em><small class="block text-xs text-gray-400 mt-2">中国大陆 · 电影 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0969.html" class="rank-row movie-card" data-title="大人国历险记" data-region="美国 / 英国" data-type="电影" data-year="2025" data-tags="巨人世界,微观视角,友情,奇幻,冒险,家庭,美国 / 英国,电影" data-genre="奇幻 / 冒险 / 家庭">
+  <span class="rank-number">179</span>
+  <img src="./69.jpg" alt="大人国历险记" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">大人国历险记</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">被缩小灯照到的少年，在巨人国的厨房里为了生存，必须和一只会说话的蟑螂组队。</em><small class="block text-xs text-gray-400 mt-2">美国 / 英国 · 电影 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0972.html" class="rank-row movie-card" data-title="追捕刺客" data-region="美国" data-type="电影" data-year="2025" data-tags="特工,复仇,暗杀,反转,动作惊悚,美国,电影" data-genre="动作惊悚">
+  <span class="rank-number">180</span>
+  <img src="./72.jpg" alt="追捕刺客" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">追捕刺客</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">退役特工发现被刺杀的政要竟是自己二十年前的替身，而真凶正朝他步步紧逼。</em><small class="block text-xs text-gray-400 mt-2">美国 · 电影 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0974.html" class="rank-row movie-card" data-title="猫侍2" data-region="日本" data-type="电影" data-year="2025" data-tags="猫咪,武士,治愈,喜剧,时代剧,日本,电影" data-genre="喜剧, 时代剧">
+  <span class="rank-number">181</span>
+  <img src="./74.jpg" alt="猫侍2" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">猫侍2</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">前杀手斑目久太郎带着白猫玉之丞浪迹天涯，这次他们卷入了一场猫咪相扑大赛的阴谋。</em><small class="block text-xs text-gray-400 mt-2">日本 · 电影 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-0987.html" class="rank-row movie-card" data-title="龙虎大飞车" data-region="中国台湾" data-type="电影" data-year="2025" data-tags="赛车,兄弟情,热血,市井,动作,喜剧,飙车,中国台湾,电影" data-genre="动作, 喜剧, 飙车">
+  <span class="rank-number">182</span>
+  <img src="./87.jpg" alt="龙虎大飞车" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">龙虎大飞车</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">落魄的退役车手为了给女儿治病，重组当年的废柴车队，挑战地下的“死亡弯道”之王。</em><small class="block text-xs text-gray-400 mt-2">中国台湾 · 电影 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-1002.html" class="rank-row movie-card" data-title="超感应医学生" data-region="韩国" data-type="电视剧" data-year="2025" data-tags="超能力,医学院,病例推理,医疗,奇幻,悬疑,韩国,电视剧" data-genre="医疗, 奇幻, 悬疑">
+  <span class="rank-number">183</span>
+  <img src="./102.jpg" alt="超感应医学生" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">超感应医学生</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">医学院新生只要触碰患者就能看到其过往病史和未来病情，但这个能力正让他分不清现实与幻象。</em><small class="block text-xs text-gray-400 mt-2">韩国 · 电视剧 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-1008.html" class="rank-row movie-card" data-title="领航者：中世纪的奥德赛" data-region="英国" data-type="剧集" data-year="2025" data-tags="中世纪,航海,史诗,探秘,历史,冒险,奇幻,英国,剧集" data-genre="历史 / 冒险 / 奇幻">
+  <span class="rank-number">184</span>
+  <img src="./108.jpg" alt="领航者：中世纪的奥德赛" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">领航者：中世纪的奥德赛</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">14世纪，一名被流放的英格兰骑士带领一群乌合之众，试图沿着传说中的航线找到东方国度。</em><small class="block text-xs text-gray-400 mt-2">英国 · 剧集 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-1013.html" class="rank-row movie-card" data-title="书店的骸骨店员本田君" data-region="日本" data-type="剧集" data-year="2025" data-tags="骷髅,书店,治愈,单元剧,喜剧,奇幻,日常,日本,剧集" data-genre="喜剧 / 奇幻 / 日常">
+  <span class="rank-number">185</span>
+  <img src="./113.jpg" alt="书店的骸骨店员本田君" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">书店的骸骨店员本田君</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">一家旧书店的店员是一具会说话的骸骨，他能听到书籍的灵魂在说话。</em><small class="block text-xs text-gray-400 mt-2">日本 · 剧集 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-1015.html" class="rank-row movie-card" data-title="福禄双霸天2000" data-region="美国" data-type="电影" data-year="2025" data-tags="音乐剧,公路片,复古,警察追捕,喜剧,音乐,动作,美国,电影" data-genre="喜剧/音乐/动作">
+  <span class="rank-number">186</span>
+  <img src="./115.jpg" alt="福禄双霸天2000" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">福禄双霸天2000</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">为了拯救孤儿院，两个穿着黑西装戴着礼帽的怪人决定重组乐队，开启一场横跨美国的疯狂巡演。</em><small class="block text-xs text-gray-400 mt-2">美国 · 电影 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-1038.html" class="rank-row movie-card" data-title="的士判官" data-region="中国香港" data-type="电影" data-year="2025" data-tags="计程车,地下执法,都市传说,癫狂正义,犯罪动作,中国香港,电影" data-genre="犯罪动作">
+  <span class="rank-number">187</span>
+  <img src="./138.jpg" alt="的士判官" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">的士判官</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">一名普通的士司机专杀拒载、绕路和宰客的同行，竟被全城乘客奉为都市英雄。</em><small class="block text-xs text-gray-400 mt-2">中国香港 · 电影 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-1074.html" class="rank-row movie-card" data-title="春光满古城" data-region="中国大陆" data-type="电影" data-year="2025" data-tags="穿越,宋朝,市井,乌龙,喜剧,古装,中国大陆,电影" data-genre="喜剧, 古装">
+  <span class="rank-number">188</span>
+  <img src="./24.jpg" alt="春光满古城" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">春光满古城</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">一个现代外卖小哥穿越回北宋汴京，却因为送餐评分系统被官府当成了间谍。</em><small class="block text-xs text-gray-400 mt-2">中国大陆 · 电影 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-1099.html" class="rank-row movie-card" data-title="两天一夜第四季" data-region="韩国" data-type="综艺" data-year="2025" data-tags="旅行,游戏,福不福,野生,真人秀,喜剧,韩国,综艺" data-genre="真人秀 / 喜剧">
+  <span class="rank-number">189</span>
+  <img src="./49.jpg" alt="两天一夜第四季" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">两天一夜第四季</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">新成员加入后，节目组搞了个大事情：停掉所有车辆，他们必须“滚铁环”从首尔走到釜山。</em><small class="block text-xs text-gray-400 mt-2">韩国 · 综艺 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-1128.html" class="rank-row movie-card" data-title="蜜月变奏曲" data-region="澳大利亚" data-type="电影" data-year="2025" data-tags="蜜月杀机,海边小镇,全员嫌疑人,惊悚,悬疑,犯罪,澳大利亚,电影" data-genre="惊悚, 悬疑, 犯罪">
+  <span class="rank-number">190</span>
+  <img src="./78.jpg" alt="蜜月变奏曲" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">蜜月变奏曲</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">新婚夫妇在澳洲海岸度蜜月时，丈夫失踪，妻子发现丈夫留下的日记里，记录的竟然是自己的杀人计划。</em><small class="block text-xs text-gray-400 mt-2">澳大利亚 · 电影 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-1133.html" class="rank-row movie-card" data-title="催眠对决" data-region="中国香港" data-type="电影" data-year="2025" data-tags="心理战,双雄对决,高智商,密室,悬疑,惊悚,犯罪,中国香港,电影" data-genre="悬疑 / 惊悚 / 犯罪">
+  <span class="rank-number">191</span>
+  <img src="./83.jpg" alt="催眠对决" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">催眠对决</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">两名顶尖催眠师在直播节目中当众互相对决，却发现观众席里藏着一个被他们共同遗忘的受害者。</em><small class="block text-xs text-gray-400 mt-2">中国香港 · 电影 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-1141.html" class="rank-row movie-card" data-title="纽约灾星第一季" data-region="美国" data-type="剧集" data-year="2025" data-tags="连环杀手,曼哈顿,上流社会,双重身份,犯罪,悬疑,真实改编,美国,剧集" data-genre="犯罪 / 悬疑 / 真实改编">
+  <span class="rank-number">192</span>
+  <img src="./91.jpg" alt="纽约灾星第一季" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">纽约灾星第一季</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">曼哈顿接连发生针对亿万富翁的完美犯罪，所有线索指向一位因“证据不足”逃脱过谋杀指控的豪门之子。</em><small class="block text-xs text-gray-400 mt-2">美国 · 剧集 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-1143.html" class="rank-row movie-card" data-title="寻宝假期2：自然召唤" data-region="美国" data-type="电影" data-year="2025" data-tags="荒诞,环保,搭档,恶搞,丛林,喜剧,动作,冒险,美国,电影" data-genre="喜剧 / 动作 / 冒险">
+  <span class="rank-number">193</span>
+  <img src="./93.jpg" alt="寻宝假期2：自然召唤" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">寻宝假期2：自然召唤</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">两个废柴损友在酒吧厕所发现一张藏宝图，为了寻找传说中的“金色便盆”闯入原始部落领地。</em><small class="block text-xs text-gray-400 mt-2">美国 · 电影 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-1153.html" class="rank-row movie-card" data-title="永不独行" data-region="中国大陆" data-type="电影" data-year="2025" data-tags="足球,盲人,父子,真实改编,运动,励志,中国大陆,电影" data-genre="运动 / 励志">
+  <span class="rank-number">194</span>
+  <img src="./103.jpg" alt="永不独行" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">永不独行</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">盲人按摩师带着从未赢过球的儿子，组了一支看不见对手的足球队。</em><small class="block text-xs text-gray-400 mt-2">中国大陆 · 电影 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-1158.html" class="rank-row movie-card" data-title="芝加哥急救第九季" data-region="美国" data-type="剧集" data-year="2025" data-tags="急诊室,疫情后遗症,医疗伦理,团队重组,医疗,剧情,动作,美国,剧集" data-genre="医疗 / 剧情 / 动作">
+  <span class="rank-number">195</span>
+  <img src="./108.jpg" alt="芝加哥急救第九季" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">芝加哥急救第九季</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">一场大地震摧毁了芝加哥部分城区，急救室被迫在废墟中运作，而医生们各自的秘密也在地震中“震”了出来。</em><small class="block text-xs text-gray-400 mt-2">美国 · 剧集 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-1181.html" class="rank-row movie-card" data-title="庐山恋" data-region="中国" data-type="电影" data-year="2025" data-tags="翻拍,代际冲突,文旅,含蓄,爱情,剧情,中国,电影" data-genre="爱情, 剧情">
+  <span class="rank-number">196</span>
+  <img src="./131.jpg" alt="庐山恋" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">庐山恋</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">80岁的老太太执意要在庐山办一场“夕阳红婚礼”，对象是60年前在同一个地方合影过的陌生人。</em><small class="block text-xs text-gray-400 mt-2">中国 · 电影 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-1191.html" class="rank-row movie-card" data-title="女巫之手" data-region="西班牙 / 墨西哥" data-type="电影" data-year="2025" data-tags="宗教审判,女巫,母女,身体恐怖,恐怖,历史,剧情,西班牙 / 墨西哥,电影" data-genre="恐怖 / 历史 / 剧情">
+  <span class="rank-number">197</span>
+  <img src="./141.jpg" alt="女巫之手" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">女巫之手</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">在16世纪西班牙宗教审判所的阴影下，一对拥有“圣痕”与“诅咒”的双胞胎姐妹，被教会利用，踏上了彼此残害的宿命之路。</em><small class="block text-xs text-gray-400 mt-2">西班牙 / 墨西哥 · 电影 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-1204.html" class="rank-row movie-card" data-title="巅峰营救" data-region="中国大陆" data-type="电影" data-year="2025" data-tags="军事,雪山,特种兵,救援,硬核,动作,战争,中国大陆,电影" data-genre="动作, 战争">
+  <span class="rank-number">198</span>
+  <img src="./4.jpg" alt="巅峰营救" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">巅峰营救</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">一架载有病毒学家的客机在喜马拉雅山脉坠毁，两支敌对国家派出的特种部队必须在雪崩前抢回活口。</em><small class="block text-xs text-gray-400 mt-2">中国大陆 · 电影 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-1207.html" class="rank-row movie-card" data-title="浪漫与抽筋" data-region="中国" data-type="电影" data-year="2025" data-tags="倒霉蛋,运动康复,冤家,搞笑,治愈,喜剧,爱情,中国,电影" data-genre="喜剧/爱情">
+  <span class="rank-number">199</span>
+  <img src="./7.jpg" alt="浪漫与抽筋" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">浪漫与抽筋</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">一个动不动就全身抽筋的倒霉蛋，遇上一个想拿奥运金牌却差点退役的体操运动员。</em><small class="block text-xs text-gray-400 mt-2">中国 · 电影 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a><a href="./movie-1227.html" class="rank-row movie-card" data-title="死路寻死" data-region="中国香港" data-type="电影" data-year="2025" data-tags="循环,自杀,心理恐怖,悬疑,惊悚,中国香港,电影" data-genre="悬疑，惊悚">
+  <span class="rank-number">200</span>
+  <img src="./27.jpg" alt="死路寻死" class="w-full h-24 object-cover rounded-lg">
+  <span><strong class="block text-xl text-gray-800 line-clamp-1">死路寻死</strong><em class="not-italic block text-sm text-gray-500 line-clamp-2 mt-1">一个想自杀的男人，发现自己每一次寻死都会意外带走一条无辜的生命，陷入了无尽的赎罪循环。</em><small class="block text-xs text-gray-400 mt-2">中国香港 · 电影 · 2025</small></span>
+  <span class="rank-score text-emerald-600 font-bold text-xl">9.8</span>
+</a></div>
+  <div class="no-results" data-no-results>没有找到匹配影片</div>
+</main>
+<footer class="bg-slate-800 text-gray-300 py-12 mt-20">
+  <div class="container mx-auto px-4">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+      <div>
+        <a class="site-logo text-2xl text-white" href="./index.html"><span class="site-logo-mark">影</span><span>欧美电影榜</span></a>
+        <p class="text-gray-400 text-sm leading-relaxed mt-4">欧美电影榜汇集高清电影、热门排行、精选影评与多设备播放体验。</p>
+      </div>
+      <div>
+        <h2 class="text-lg font-bold text-white mb-4">热门分类</h2>
+        <div class="grid grid-cols-2 gap-2 text-sm"><a class="text-gray-400 hover:text-emerald-400 transition-colors" href="./category-western.html">欧美热映</a><a class="text-gray-400 hover:text-emerald-400 transition-colors" href="./category-suspense.html">悬疑惊悚</a><a class="text-gray-400 hover:text-emerald-400 transition-colors" href="./category-action.html">动作冒险</a><a class="text-gray-400 hover:text-emerald-400 transition-colors" href="./category-comedy.html">喜剧轻松</a><a class="text-gray-400 hover:text-emerald-400 transition-colors" href="./category-drama.html">剧情佳片</a><a class="text-gray-400 hover:text-emerald-400 transition-colors" href="./category-romance.html">爱情家庭</a></div>
+      </div>
+      <div>
+        <h2 class="text-lg font-bold text-white mb-4">快速入口</h2>
+        <div class="space-y-2 text-sm">
+          <a class="block text-gray-400 hover:text-emerald-400 transition-colors" href="./rankings.html">电影排行榜</a>
+          <a class="block text-gray-400 hover:text-emerald-400 transition-colors" href="./search.html">影片搜索</a>
+          <a class="block text-gray-400 hover:text-emerald-400 transition-colors" href="./categories.html">分类总览</a>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-slate-700 pt-6 text-sm text-gray-500 flex flex-col md:flex-row gap-3 justify-between">
+      <p>欧美电影榜 · 高清电影与热门榜单</p>
+      <p>© 2026 欧美电影榜. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+<script src="./assets/hls.js"></script>
+<script src="./assets/app.js"></script>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?95df08bc498ee0333203841fd6fee1eb";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>

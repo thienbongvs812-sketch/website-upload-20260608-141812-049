@@ -1,0 +1,24 @@
+{
+  "movies_parsed": 2000,
+  "video_sources_found": 20,
+  "categories": {
+    "高清热播": 200,
+    "免费点播": 200,
+    "年度热剧": 200,
+    "热播大片": 200,
+    "经典电影": 200,
+    "最新上线": 200,
+    "编辑精选": 200,
+    "剧情片库": 200,
+    "悬疑惊悚": 200,
+    "环球精选": 200
+  },
+  "validation": {
+    "html_files": 2014,
+    "detail_files": 2000,
+    "category_files": 10,
+    "missing_baidu": [],
+    "forbidden_hits": [],
+    "expected_movies": 2000
+  }
+}
